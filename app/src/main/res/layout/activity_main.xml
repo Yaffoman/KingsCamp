@@ -7,17 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/message"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:text="@string/title_home"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/nav_view"
         android:layout_width="0dp"
@@ -29,5 +18,39 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:menu="@menu/bottom_nav_menu" />
+
+    <Button
+        android:id="@+id/plant_button"
+        android:layout_width="157dp"
+        android:layout_height="142dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="52dp"
+        android:onClick="onButtonClick"
+        android:text="Plants"
+        app:layout_constraintStart_toEndOf="@+id/mammal_button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bird_button"
+        android:layout_width="181dp"
+        android:layout_height="177dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        android:onClick="onButtonClick"
+        android:text="Birds"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mammal_button" />
+
+    <Button
+        android:id="@+id/mammal_button"
+        android:layout_width="169dp"
+        android:layout_height="130dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="onButtonClick"
+        android:text="Mammals"
+        app:layout_constraintBottom_toTopOf="@+id/bird_button"
+        app:layout_constraintEnd_toStartOf="@+id/plant_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
