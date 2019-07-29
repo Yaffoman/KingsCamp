@@ -10,18 +10,27 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.SectionIndexer;
 import android.widget.TextView;
 
 import java.util.Collection;
 import java.util.Iterator;
+import java.util.Locale;
 import java.util.Set;
 
 public class MainActivity extends AppCompatActivity {
     private TextView mTextMessage;
+    String [] Sections = {"Mammals", "Birds", "Plants"};
     String SECTION_KEY = "SECTION";
     String FIRST = "FIRST";
     int NUM_MAMMALS = 200;
+    String ARRAY_NAME = "myArr";
 
+    int TOTAL_SPECIES = 93;
+    int TOTAL_MAMMALS = 43;
+    int TOTAL_PLANTS = 50;
+    int TOTAL_BIRDS;//TODO
+    int TOTAL_REPTILES;//TODO
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
@@ -58,6 +67,21 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, ScrollingActivity.class);
         intent.putExtra(SECTION_KEY, section);
         this.startActivity(intent);
+    }
+
+    @Override
+    protected void onResume(){
+        super.onResume();
+
+        int completed = 0;
+        for(String s : Sections) {
+            SharedPreferences sharedPreferences = getSharedPreferences(s,MODE_PRIVATE);
+            for (int i = 0; i < sharedPreferences.getAll().size(); i++)
+                if( sharedPreferences.getBoolean(ARRAY_NAME + "_" + i, false))
+                    completed++;
+
+        }
+        ((TextView)findViewById(R.id.textView)).setText(String.format("%%%.2f",100.0*completed/TOTAL_SPECIES));
     }
 
 }

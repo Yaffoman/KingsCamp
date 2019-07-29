@@ -53,4 +53,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="97dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/bird_button"
+        app:layout_constraintTop_toBottomOf="@+id/plant_button" />
+
 </android.support.constraint.ConstraintLayout>
