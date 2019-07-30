@@ -111,4 +111,9 @@
 
     </string-array>
     <string name="action_settings">Settings</string>
+    <string name="plants">Plants</string>
+    <string name="birds">Birds</string>
+    <string name="textview">TextView</string>
+    <string name="mammals">Mammals</string>
+    <string name="reptilesandamphibians">Reptiles\nAnd\nAmphibians</string>
 </resources>

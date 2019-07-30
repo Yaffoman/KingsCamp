@@ -2,6 +2,7 @@ package lerner.ethan.kingscamp;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -15,9 +16,13 @@ import android.widget.TextView;
 
 import java.util.Locale;
 
+import static android.graphics.Color.GRAY;
+import static android.graphics.Color.LTGRAY;
+import static android.graphics.Color.WHITE;
+
 public class ScrollingActivity extends AppCompatActivity {
-    int selectedColor = android.R.color.darker_gray;
-    int unselectedColor = android.R.color.white;
+    int selectedColor;
+    int unselectedColor;
     String SECTION_KEY = "SECTION";
     String ARRAY_NAME = "myArr";
     String FIRST = "FIRST";
@@ -31,9 +36,11 @@ public class ScrollingActivity extends AppCompatActivity {
         Intent intent = getIntent();
         section = intent.getStringExtra(SECTION_KEY);
         setContentView(R.layout.activity_scrolling);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         setTitle(section);
+        unselectedColor = Color.rgb(255, 239, 229);
+        selectedColor = Color.rgb(204, 173, 153);
         fillArray();
     }
 
@@ -69,15 +76,15 @@ public class ScrollingActivity extends AppCompatActivity {
 
 
         LinearLayout outerLinear = findViewById(R.id.linlayout);
-        LinearLayout innerLinear;
+     //   LinearLayout innerLinear;
 
         for (int i = 0; i < size; i++) {
-            LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
+            /*LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
             innerLinear = new LinearLayout(outerLinear.getContext());
             innerLinear.setLayoutParams(layoutParams);
             innerLinear.setOrientation(LinearLayout.HORIZONTAL);
-
-            CheckBox cb = new CheckBox(innerLinear.getContext());
+*/
+            CheckBox cb = new CheckBox(outerLinear.getContext());
             cb.setText(String.format(Locale.getDefault(), "\t%d\t%s", i+1, speciesArray[i]));
             cb.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
 
@@ -88,24 +95,24 @@ public class ScrollingActivity extends AppCompatActivity {
                     CheckBox thisCheckBox = (CheckBox) view;
                     int pos = Integer.parseInt(((TextView) view).getText().toString().replaceAll("[\\D]", ""));
                     pos--; //Because it is numbered from 1, not 0
-                    if (checklist[pos]) //Should be green already
+                    /*if (checklist[pos]) //Should be green already
                         view.setBackgroundColor(getResources().getColor(unselectedColor));
                     else
                         view.setBackgroundColor(getResources().getColor(selectedColor));
-
+                    */
                     checklist[pos] = !checklist[pos];
 
                 }
             });
             //Toggle colors, every other line is gray
             if(i%2 == 0)
-                cb.setBackgroundColor(getResources().getColor(selectedColor));
+                cb.setBackgroundColor(selectedColor);
             else
-                cb.setBackgroundColor(getResources().getColor(unselectedColor));
+                cb.setBackgroundColor(unselectedColor);
             cb.setChecked(checklist[i]);
-            outerLinear.addView(innerLinear);
+            //outerLinear.addView(innerLinear);
 
-            innerLinear.addView(cb);
+            outerLinear.addView(cb);
         }
 
     }
