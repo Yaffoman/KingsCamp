@@ -3,26 +3,21 @@ package lerner.ethan.kingscamp;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
+import android.view.ViewGroup;
+import android.widget.CheckBox;
+import android.widget.CheckedTextView;
 import android.widget.LinearLayout;
-import android.widget.ListView;
 import android.widget.ScrollView;
-import android.widget.TableLayout;
-import android.widget.TableRow;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
-import java.util.List;
 import java.util.Locale;
 
 public class ScrollingActivity extends AppCompatActivity {
+    int selectedColor = android.R.color.darker_gray;
+    int unselectedColor = android.R.color.white;
     String SECTION_KEY = "SECTION";
     String ARRAY_NAME = "myArr";
     String FIRST = "FIRST";
@@ -73,31 +68,44 @@ public class ScrollingActivity extends AppCompatActivity {
         }
 
 
+        LinearLayout outerLinear = findViewById(R.id.linlayout);
+        LinearLayout innerLinear;
 
-        LinearLayout ll = findViewById(R.id.linlayout);
+        for (int i = 0; i < size; i++) {
+            LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
+            innerLinear = new LinearLayout(outerLinear.getContext());
+            innerLinear.setLayoutParams(layoutParams);
+            innerLinear.setOrientation(LinearLayout.HORIZONTAL);
 
-        for(int i = 0; i < size; i++)
-        {
-            TextView tv = new TextView(this);
-            tv.setText(String.format(Locale.getDefault(),"%d\t%s",i, speciesArray[i]));
-            tv.setClickable(true);
-            tv.setOnClickListener(new View.OnClickListener() {
+            CheckBox cb = new CheckBox(innerLinear.getContext());
+            cb.setText(String.format(Locale.getDefault(), "\t%d\t%s", i+1, speciesArray[i]));
+            cb.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
+
+            cb.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     //Use regex to delete all non-digits, then parse to int
-                    int pos = Integer.parseInt(((TextView)view).getText().toString().replaceAll("[\\D]", ""));
-                    if(checklist[pos]) //Should be green already
-                        view.setBackgroundColor(getResources().getColor(android.R.color.white));
+                    CheckBox thisCheckBox = (CheckBox) view;
+                    int pos = Integer.parseInt(((TextView) view).getText().toString().replaceAll("[\\D]", ""));
+                    pos--; //Because it is numbered from 1, not 0
+                    if (checklist[pos]) //Should be green already
+                        view.setBackgroundColor(getResources().getColor(unselectedColor));
                     else
-                        view.setBackgroundColor(getResources().getColor(android.R.color.holo_green_light));
+                        view.setBackgroundColor(getResources().getColor(selectedColor));
 
                     checklist[pos] = !checklist[pos];
 
                 }
             });
-            if(checklist[i])
-                tv.setBackgroundColor(getResources().getColor(android.R.color.holo_green_light));
-            ll.addView(tv);
+            //Toggle colors, every other line is gray
+            if(i%2 == 0)
+                cb.setBackgroundColor(getResources().getColor(selectedColor));
+            else
+                cb.setBackgroundColor(getResources().getColor(unselectedColor));
+            cb.setChecked(checklist[i]);
+            outerLinear.addView(innerLinear);
+
+            innerLinear.addView(cb);
         }
 
     }
