@@ -1,9 +1,12 @@
 package lerner.ethan.kingscamp;
 
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -16,9 +19,7 @@ import android.widget.TextView;
 
 import java.util.Locale;
 
-import static android.graphics.Color.GRAY;
-import static android.graphics.Color.LTGRAY;
-import static android.graphics.Color.WHITE;
+import static lerner.ethan.kingscamp.SpecialDialog.species.*;
 
 public class ScrollingActivity extends AppCompatActivity {
     int selectedColor;
@@ -46,7 +47,7 @@ public class ScrollingActivity extends AppCompatActivity {
 
     private void fillArray() {
         String[] speciesArray;
-        ScrollView list = findViewById(R.id.species_list);
+        LinearLayout outerLinear = findViewById(R.id.linlayout);
 
         if (section.compareTo("Mammals") == 0)
             speciesArray = getResources().getStringArray(R.array.mammals);
@@ -61,29 +62,20 @@ public class ScrollingActivity extends AppCompatActivity {
         SharedPreferences.Editor editor = sharedPref.edit();
         int size = speciesArray.length;
         checklist = new boolean[size];
-
+/*
         if (sharedPref.getBoolean(FIRST, true)) {
             editor.putBoolean(FIRST, false);
             editor.putInt(ARRAY_NAME + "_size", speciesArray.length);
             for (int i = 0; i < size; i++)
                 editor.putBoolean(ARRAY_NAME + "_" + i, false);
             editor.apply();
-        } else {
-
-            for (int i = 0; i < size; i++)
+        } else { */
+        for (int i = 0; i < size; i++) //Create an array of booleans, all should be false upon initial app launch
                 checklist[i] = sharedPref.getBoolean(ARRAY_NAME + "_" + i, false);
-        }
+        //}
 
+        for (int i = 0; i < size; i++) { //Dynamically create each checkbox
 
-        LinearLayout outerLinear = findViewById(R.id.linlayout);
-     //   LinearLayout innerLinear;
-
-        for (int i = 0; i < size; i++) {
-            /*LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
-            innerLinear = new LinearLayout(outerLinear.getContext());
-            innerLinear.setLayoutParams(layoutParams);
-            innerLinear.setOrientation(LinearLayout.HORIZONTAL);
-*/
             CheckBox cb = new CheckBox(outerLinear.getContext());
             cb.setText(String.format(Locale.getDefault(), "\t%d\t%s", i+1, speciesArray[i]));
             cb.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
@@ -92,16 +84,21 @@ public class ScrollingActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     //Use regex to delete all non-digits, then parse to int
-                    CheckBox thisCheckBox = (CheckBox) view;
                     int pos = Integer.parseInt(((TextView) view).getText().toString().replaceAll("[\\D]", ""));
                     pos--; //Because it is numbered from 1, not 0
-                    /*if (checklist[pos]) //Should be green already
-                        view.setBackgroundColor(getResources().getColor(unselectedColor));
-                    else
-                        view.setBackgroundColor(getResources().getColor(selectedColor));
-                    */
                     checklist[pos] = !checklist[pos];
+                }
+            });
 
+            cb.setOnLongClickListener(new View.OnLongClickListener() {
+                @Override
+                public boolean onLongClick(View view) {
+                    int pos = Integer.parseInt(((TextView) view).getText().toString().replaceAll("[\\D]", ""));
+
+                    Dialog popup = new SpecialDialog(ScrollingActivity.this, pos, MAMMAL);
+                    popup.show();
+
+                    return false;
                 }
             });
             //Toggle colors, every other line is gray
@@ -110,11 +107,9 @@ public class ScrollingActivity extends AppCompatActivity {
             else
                 cb.setBackgroundColor(unselectedColor);
             cb.setChecked(checklist[i]);
-            //outerLinear.addView(innerLinear);
 
             outerLinear.addView(cb);
         }
-
     }
 
     @Override

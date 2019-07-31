@@ -13,6 +13,8 @@ import android.widget.Button;
 import android.widget.SectionIndexer;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.Locale;
@@ -31,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     int TOTAL_PLANTS = 50;
     int TOTAL_BIRDS;//TODO
     int TOTAL_REPTILES;//TODO
+    int seen;
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
@@ -81,7 +84,22 @@ public class MainActivity extends AppCompatActivity {
                     completed++;
 
         }
-        ((TextView)findViewById(R.id.textView)).setText(String.format("%%%.2f",100.0*completed/TOTAL_SPECIES));
+        seen = completed;
+        TextView percentage = findViewById(R.id.textView);
+        percentage.setText(String.format(Locale.getDefault(), "%%%.2f", 100.0 * completed / TOTAL_SPECIES));
+        percentage.setOnClickListener(new View.OnClickListener() {
+            boolean percent = false;
+
+            @Override
+            public void onClick(View view) {
+                percent = !percent;
+                if (percent)
+                    ((TextView) view).setText(seen + "/" + TOTAL_SPECIES);
+                else
+                    ((TextView) view).setText(String.format(Locale.getDefault(), "%%%.2f", 100.0 * seen / TOTAL_SPECIES));
+
+            }
+        });
     }
 
 }
