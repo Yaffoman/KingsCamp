@@ -62,6 +62,8 @@ public class ScrollingActivity extends AppCompatActivity {
         SharedPreferences.Editor editor = sharedPref.edit();
         int size = speciesArray.length;
         checklist = new boolean[size];
+        editor.putInt(ARRAY_NAME + "_size", size);
+        editor.apply();
 /*
         if (sharedPref.getBoolean(FIRST, true)) {
             editor.putBoolean(FIRST, false);
@@ -113,7 +115,7 @@ public class ScrollingActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onPause() {
+    protected void onDestroy() {
 
         SharedPreferences sharedPref = getSharedPreferences(section, MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPref.edit();
@@ -123,6 +125,6 @@ public class ScrollingActivity extends AppCompatActivity {
             editor.putBoolean(ARRAY_NAME + "_" + i, checklist[i]);
         editor.apply();
 
-        super.onPause();
+        super.onDestroy();
     }
 }
