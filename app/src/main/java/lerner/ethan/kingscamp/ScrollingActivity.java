@@ -26,9 +26,7 @@ public class ScrollingActivity extends AppCompatActivity {
     int unselectedColor;
     String SECTION_KEY = "SECTION";
     String ARRAY_NAME = "myArr";
-    String FIRST = "FIRST";
-    int NUM_MAMMALS = 200;
-    boolean[] checklist;
+    CheckBox[] checklist;
     String section;
 
     @Override
@@ -61,34 +59,20 @@ public class ScrollingActivity extends AppCompatActivity {
         SharedPreferences sharedPref = getSharedPreferences(section, MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPref.edit();
         int size = speciesArray.length;
-        checklist = new boolean[size];
-        editor.putInt(ARRAY_NAME + "_size", size);
+        checklist = new CheckBox[size];
+        editor.putInt(section + "_size", size);
         editor.apply();
-/*
-        if (sharedPref.getBoolean(FIRST, true)) {
-            editor.putBoolean(FIRST, false);
-            editor.putInt(ARRAY_NAME + "_size", speciesArray.length);
-            for (int i = 0; i < size; i++)
-                editor.putBoolean(ARRAY_NAME + "_" + i, false);
-            editor.apply();
-        } else { */
-        for (int i = 0; i < size; i++) //Create an array of booleans, all should be false upon initial app launch
-                checklist[i] = sharedPref.getBoolean(ARRAY_NAME + "_" + i, false);
-        //}
 
         for (int i = 0; i < size; i++) { //Dynamically create each checkbox
 
             CheckBox cb = new CheckBox(outerLinear.getContext());
-            cb.setText(String.format(Locale.getDefault(), "\t%d\t%s", i+1, speciesArray[i]));
+            cb.setText(speciesArray[i]);
             cb.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
 
             cb.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    //Use regex to delete all non-digits, then parse to int
-                    int pos = Integer.parseInt(((TextView) view).getText().toString().replaceAll("[\\D]", ""));
-                    pos--; //Because it is numbered from 1, not 0
-                    checklist[pos] = !checklist[pos];
+
                 }
             });
 
@@ -108,8 +92,8 @@ public class ScrollingActivity extends AppCompatActivity {
                 cb.setBackgroundColor(selectedColor);
             else
                 cb.setBackgroundColor(unselectedColor);
-            cb.setChecked(checklist[i]);
-
+            cb.setChecked(sharedPref.getBoolean(cb.getText().toString(), false));
+            checklist[i] = cb;
             outerLinear.addView(cb);
         }
     }
@@ -119,10 +103,14 @@ public class ScrollingActivity extends AppCompatActivity {
 
         SharedPreferences sharedPref = getSharedPreferences(section, MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPref.edit();
-        int size = sharedPref.getInt(ARRAY_NAME + "_size", 0);
-
-        for (int i = 0; i < size; i++)
-            editor.putBoolean(ARRAY_NAME + "_" + i, checklist[i]);
+        int size = sharedPref.getInt(section + "_size", 0);
+        int total = 0;
+        for (int i = 0; i < size; i++) {
+            editor.putBoolean(checklist[i].getText().toString(), checklist[i].isChecked());
+            if (checklist[i].isChecked())
+                total++;
+        }
+        editor.putInt(section + "_completed", total);
         editor.apply();
 
         super.onDestroy();

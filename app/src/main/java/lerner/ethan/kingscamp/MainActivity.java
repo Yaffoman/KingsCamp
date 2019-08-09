@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.SectionIndexer;
 import android.widget.TextView;
 
@@ -68,31 +69,33 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onResume(){
-        super.onResume();
+    protected void onStart() {
+        super.onStart();
 
         int completed = 0;
         for(String s : Sections) {
             SharedPreferences sharedPreferences = getSharedPreferences(s,MODE_PRIVATE);
-            for (int i = 0; i < sharedPreferences.getAll().size(); i++)
-                if( sharedPreferences.getBoolean(ARRAY_NAME + "_" + i, false))
-                    completed++;
+            completed += sharedPreferences.getInt(s + "_completed", 0);
 
         }
         seen = completed;
         TextView percentage = findViewById(R.id.textView);
+        ProgressBar progressBar = findViewById(R.id.progress);
+
+        progressBar.setMax(TOTAL_SPECIES);
+        progressBar.setProgress(completed);
         percentage.setText(String.format(Locale.getDefault(), "%%%.2f", 100.0 * completed / TOTAL_SPECIES));
         percentage.setOnClickListener(new View.OnClickListener() {
-            boolean percent = false;
+            boolean percent = true;
 
             @Override
             public void onClick(View view) {
-                percent = !percent;
-                if (percent)
-                    ((TextView) view).setText(String.format("%d/%d", seen, TOTAL_SPECIES));
-                else
+                if (!percent) {
                     ((TextView) view).setText(String.format(Locale.getDefault(), "%%%.2f", 100.0 * seen / TOTAL_SPECIES));
-
+                } else {
+                    ((TextView) view).setText(String.format(Locale.getDefault(), "%d/%d", seen, TOTAL_SPECIES));
+                }
+                percent = !percent;
             }
         });
     }
