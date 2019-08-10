@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
 
         progressBar.setMax(TOTAL_SPECIES);
         progressBar.setProgress(completed);
-        percentage.setText(String.format(Locale.getDefault(), "%%%.2f", 100.0 * completed / TOTAL_SPECIES));
+        percentage.setText(String.format(Locale.getDefault(), "%d%%", 100 * completed / TOTAL_SPECIES));
         percentage.setOnClickListener(new View.OnClickListener() {
             boolean percent = true;
 

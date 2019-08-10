@@ -2,12 +2,24 @@ package lerner.ethan.kingscamp;
 
 import android.app.Activity;
 import android.app.Dialog;
+import android.content.Context;
+import android.content.res.Resources;
 import android.content.res.TypedArray;
+import android.graphics.drawable.Drawable;
+import android.media.Image;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageView;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
+import java.io.InputStream;
 
 public class SpecialDialog extends Dialog implements
         android.view.View.OnClickListener {
@@ -21,22 +33,30 @@ public class SpecialDialog extends Dialog implements
         super(a);
     }
 
-    SpecialDialog(Activity a, int s, species specie) {
+    SpecialDialog(Activity a, String name, String specie) {
         super(a);
+        try {
 
-        switch (specie) {
+            JSONObject obj = new JSONObject(loadJSONFromAsset(a));
+            String img = obj.getJSONObject(specie).getJSONArray(name.toLowerCase()).getJSONObject(0).getString("imageid");
+            imageID = a.getResources().getIdentifier("@drawable/" + img, "drawable", a.getPackageName());
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+       /* switch (specie) {
             case BIRD:
                 break;
             case PLANT:
                 break;
             case MAMMAL:
-                imageID = a.getResources().obtainTypedArray(R.array.mammal_images).getResourceId(s, -1);
                 break;
             case REPTILE:
                 break;
             default:
                 break;
-        }
+        }*/
     }
 
     @Override
@@ -55,4 +75,31 @@ public class SpecialDialog extends Dialog implements
     public void onClick(View v) {
         dismiss();
     }
+
+
+    public String loadJSONFromAsset(Context context) {
+        String json = null;
+        try {
+            InputStream is = context.getAssets().open("imageids.json");
+
+            int size = is.available();
+
+            byte[] buffer = new byte[size];
+
+            is.read(buffer);
+
+            is.close();
+
+            json = new String(buffer, "UTF-8");
+
+
+        } catch (IOException ex) {
+            ex.printStackTrace();
+            return null;
+        }
+        return json;
+
+    }
+
+
 }

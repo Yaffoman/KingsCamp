@@ -79,9 +79,9 @@ public class ScrollingActivity extends AppCompatActivity {
             cb.setOnLongClickListener(new View.OnLongClickListener() {
                 @Override
                 public boolean onLongClick(View view) {
-                    int pos = Integer.parseInt(((TextView) view).getText().toString().replaceAll("[\\D]", ""));
+                    //int pos = Integer.parseInt(((TextView) view).getText().toString().replaceAll("[\\D]", ""));
 
-                    Dialog popup = new SpecialDialog(ScrollingActivity.this, pos, MAMMAL);
+                    Dialog popup = new SpecialDialog(ScrollingActivity.this, ((TextView) view).getText().toString(), "mammals");
                     popup.show();
 
                     return false;
@@ -98,6 +98,23 @@ public class ScrollingActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    protected void onPause() {
+
+        SharedPreferences sharedPref = getSharedPreferences(section, MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPref.edit();
+        int size = sharedPref.getInt(section + "_size", 0);
+        int total = 0;
+        for (int i = 0; i < size; i++) {
+            editor.putBoolean(checklist[i].getText().toString(), checklist[i].isChecked());
+            if (checklist[i].isChecked())
+                total++;
+        }
+        editor.putInt(section + "_completed", total);
+        editor.apply();
+
+        super.onPause();
+    }
     @Override
     protected void onDestroy() {
 

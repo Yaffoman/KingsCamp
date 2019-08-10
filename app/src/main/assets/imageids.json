@@ -1,0 +1,19 @@
+{
+  "mammals": {
+    "wilddog": [
+      {
+        "sciname": "Wield dog",
+        "imageid": "wilddog",
+        "description": "TESTSTEST"
+      }
+    ]
+  },
+  "plants": [
+    {
+      "name": "GB",
+      "sciname": "",
+      "image": "@drawable/wilddog.jpg",
+      "description": 1381149604
+    }
+  ]
+}
