@@ -22,17 +22,18 @@ import java.util.Locale;
 import java.util.Set;
 
 public class MainActivity extends AppCompatActivity {
-    String [] Sections = {"Mammals", "Birds", "Plants"};
+    String[] Sections = {"Mammals", "Birds", "Plants", "Reptiles"};
     String SECTION_KEY = "SECTION";
     String FIRST = "FIRST";
     int NUM_MAMMALS = 200;
     String ARRAY_NAME = "myArr";
 
+
     int TOTAL_SPECIES = 93;
     int TOTAL_MAMMALS = 43;
     int TOTAL_PLANTS = 50;
-    int TOTAL_BIRDS;//TODO
-    int TOTAL_REPTILES;//TODO
+    int TOTAL_BIRDS = 10;//TODO
+    int TOTAL_REPTILES = 43;//TODO
     int seen;
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -58,6 +59,8 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView navView = findViewById(R.id.nav_view);
         navView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
+        final ProgressBar progressBar = (ProgressBar) findViewById(R.id.reptile_progress);
+        progressBar.setProgress(50);
     }
 
     public void onButtonClick(View v){
@@ -73,9 +76,25 @@ public class MainActivity extends AppCompatActivity {
         super.onStart();
 
         int completed = 0;
+
         for(String s : Sections) {
             SharedPreferences sharedPreferences = getSharedPreferences(s,MODE_PRIVATE);
-            completed += sharedPreferences.getInt(s + "_completed", 0);
+            int s_completed = sharedPreferences.getInt(s + "_completed", 0);
+            completed += s_completed;
+            switch (s) {
+                case "Mammals":
+                    ((ProgressBar) findViewById(R.id.mammal_progress)).setProgress(100 * s_completed / TOTAL_MAMMALS);
+                    break;
+                case "Reptiles":
+                    ((ProgressBar) findViewById(R.id.reptile_progress)).setProgress(100 * s_completed / TOTAL_REPTILES);
+                    break;
+                case "Birds":
+                    ((ProgressBar) findViewById(R.id.bird_progress)).setProgress(100 * s_completed / TOTAL_BIRDS);
+                    break;
+                case "Plants":
+                    ((ProgressBar) findViewById(R.id.plant_progress)).setProgress(100 * s_completed / TOTAL_PLANTS);
+                    break;
+            }
 
         }
         seen = completed;
@@ -91,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (!percent) {
-                    ((TextView) view).setText(String.format(Locale.getDefault(), "%%%.2f", 100.0 * seen / TOTAL_SPECIES));
+                    ((TextView) view).setText(String.format(Locale.getDefault(), "%d%%", 100 * seen / TOTAL_SPECIES));
                 } else {
                     ((TextView) view).setText(String.format(Locale.getDefault(), "%d/%d", seen, TOTAL_SPECIES));
                 }
