@@ -4,7 +4,7 @@
       {
         "sciname": "Wield dog",
         "imageid": "wilddog",
-        "description": "TESTSTEST"
+        "description": "This is a wild dog"
       }
     ]
   },
@@ -12,7 +12,7 @@
     {
       "name": "GB",
       "sciname": "",
-      "image": "@drawable/wilddog.jpg",
+      "image": "@drawable/wilddog.png",
       "description": 1381149604
     }
   ]

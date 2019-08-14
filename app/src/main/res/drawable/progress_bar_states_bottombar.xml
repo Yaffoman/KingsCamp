@@ -16,11 +16,13 @@
         <clip>
             <shape android:shape="rectangle">
                 <corners android:radius="5dp" />
+                <padding
+                    android:top="40dp"
+                    android:bottom="40dp"
+                    android:left="40dp"
+                    android:right="40dp" />
+                <solid android:color="@color/colorPrimary" />
 
-                <gradient
-                    android:startColor="#9a7e6b"
-                    android:endColor="#9a7e6b"
-                    android:centerColor="#9a7e6b" />
             </shape>
         </clip>
     </item>

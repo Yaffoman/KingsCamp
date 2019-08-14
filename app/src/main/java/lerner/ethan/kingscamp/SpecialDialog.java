@@ -13,10 +13,12 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.w3c.dom.Text;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -26,6 +28,8 @@ public class SpecialDialog extends Dialog implements
 
     private int num; //The position of selection
     private int imageID;
+    private String description;
+    private String sciname;
 
     enum species {MAMMAL, BIRD, REPTILE, PLANT}
 
@@ -40,7 +44,8 @@ public class SpecialDialog extends Dialog implements
             JSONObject obj = new JSONObject(loadJSONFromAsset(a));
             String img = obj.getJSONObject(specie).getJSONArray(name.toLowerCase()).getJSONObject(0).getString("imageid");
             imageID = a.getResources().getIdentifier("@drawable/" + img, "drawable", a.getPackageName());
-
+            sciname = obj.getJSONObject(specie).getJSONArray(name.toLowerCase()).getJSONObject(0).getString("sciname");
+            description = obj.getJSONObject(specie).getJSONArray(name.toLowerCase()).getJSONObject(0).getString("description");
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -63,12 +68,16 @@ public class SpecialDialog extends Dialog implements
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.popup);
+        setContentView(R.layout.popup_2);
         Button yes = findViewById(R.id.close_button);
         yes.setOnClickListener(this);
 
         ImageView imageView = findViewById(R.id.imageView);
+        TextView descView = findViewById(R.id.desc_view);
+        TextView sciView = findViewById(R.id.sciname_view);
         imageView.setImageResource(imageID);
+        descView.setText(description);
+        sciView.setText(sciname);
     }
 
     @Override
