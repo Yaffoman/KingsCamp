@@ -1,10 +1,1672 @@
 {
   "mammals": {
-    "wilddog": [
+    "42": [
       {
         "sciname": "Wield dog",
         "imageid": "wilddog",
         "description": "This is a wild dog"
+      }
+    ]
+  },
+  "birds": {
+    "1": [
+      {
+        "sciname": "Apalis flavida"
+      }
+    ],
+    "2": [
+      {
+        "sciname": "Recurvirostra avosetta"
+      }
+    ],
+    "3": [
+      {
+        "sciname": "Turdoides jardineii"
+      }
+    ],
+    "4": [
+      {
+        "sciname": "Turdoides bicolor"
+      }
+    ],
+    "5": [
+      {
+        "sciname": "Tricholaema leucomelas"
+      }
+    ],
+    "6": [
+      {
+        "sciname": "Lybius torquatus"
+      }
+    ],
+    "7": [
+      {
+        "sciname": "Trachyphonus vaillantii"
+      }
+    ],
+    "8": [
+      {
+        "sciname": "Terathopius ecaudatus"
+      }
+    ],
+    "9": [
+      {
+        "sciname": "Batis molitor"
+      }
+    ],
+    "10": [
+      {
+        "sciname": "Merops apiaster"
+      }
+    ],
+    "11": [
+      {
+        "sciname": "Merops pusillus"
+      }
+    ],
+    "12": [
+      {
+        "sciname": "Merops nubicoides"
+      }
+    ],
+    "13": [
+      {
+        "sciname": "Merops bullockoides"
+      }
+    ],
+    "14": [
+      {
+        "sciname": "Merops albicollis"
+      }
+    ],
+    "15": [
+      {
+        "sciname": "Euplectes orix"
+      }
+    ],
+    "16": [
+      {
+        "sciname": "Euplectes afer"
+      }
+    ],
+    "17": [
+      {
+        "sciname": "Ixobrychus sturmii"
+      }
+    ],
+    "18": [
+      {
+        "sciname": "Ixobrychus minutus"
+      }
+    ],
+    "19": [
+      {
+        "sciname": "Laniarius ferrugineus"
+      }
+    ],
+    "20": [
+      {
+        "sciname": "Phyllastrephus terrestris"
+      }
+    ],
+    "21": [
+      {
+        "sciname": "Nilaus afer"
+      }
+    ],
+    "22": [
+      {
+        "sciname": "Pycnonotus tricolor"
+      }
+    ],
+    "23": [
+      {
+        "sciname": "Emberiza tahapisi"
+      }
+    ],
+    "24": [
+      {
+        "sciname": "Emberiza flaviventris"
+      }
+    ],
+    "25": [
+      {
+        "sciname": "Emberiza impetuani"
+      }
+    ],
+    "26": [
+      {
+        "sciname": "Telophorus viridis"
+      }
+    ],
+    "27": [
+      {
+        "sciname": "Malaconotus blanchoti"
+      }
+    ],
+    "28": [
+      {
+        "sciname": "Chlorophoneus sulfureopectus"
+      }
+    ],
+    "29": [
+      {
+        "sciname": "Lissotis melanogaster"
+      }
+    ],
+    "30": [
+      {
+        "sciname": "Ardeotis kori"
+      }
+    ],
+    "31": [
+      {
+        "sciname": "Turnix sylvaticus"
+      }
+    ],
+    "32": [
+      {
+        "sciname": "Buteo buteo"
+      }
+    ],
+    "33": [
+      {
+        "sciname": "Pernis apivorus"
+      }
+    ],
+    "34": [
+      {
+        "sciname": "Kaupifalco monogrammicus"
+      }
+    ],
+    "35": [
+      {
+        "sciname": "Camaroptera brachyura"
+      }
+    ],
+    "36": [
+      {
+        "sciname": "Crithagra mozambica"
+      }
+    ],
+    "37": [
+      {
+        "sciname": "Myrmecocichla arnotti"
+      }
+    ],
+    "38": [
+      {
+        "sciname": "Thamnolaea cinnamomeiventris"
+      }
+    ],
+    "39": [
+      {
+        "sciname": "Cisticola chiniana"
+      }
+    ],
+    "40": [
+      {
+        "sciname": "Cisticola erythrops"
+      }
+    ],
+    "41": [
+      {
+        "sciname": "Cisticola juncidis"
+      }
+    ],
+    "42": [
+      {
+        "sciname": "Fulica cristata"
+      }
+    ],
+    "43": [
+      {
+        "sciname": "Microcarbo africanus"
+      }
+    ],
+    "44": [
+      {
+        "sciname": "Phalacrocorax lucidus"
+      }
+    ],
+    "45": [
+      {
+        "sciname": "Centropus grillii"
+      }
+    ],
+    "46": [
+      {
+        "sciname": "Centropus burchellii"
+      }
+    ],
+    "47": [
+      {
+        "sciname": "Rhinoptilus chalcopterus"
+      }
+    ],
+    "48": [
+      {
+        "sciname": "Cursorius temminckii"
+      }
+    ],
+    "49": [
+      {
+        "sciname": "Crex egregia"
+      }
+    ],
+    "50": [
+      {
+        "sciname": "Porzana pusilla"
+      }
+    ],
+    "51": [
+      {
+        "sciname": "Amaurornis flavirostra"
+      }
+    ],
+    "52": [
+      {
+        "sciname": "Crex crex"
+      }
+    ],
+    "53": [
+      {
+        "sciname": "Sylvietta rufescens"
+      }
+    ],
+    "54": [
+      {
+        "sciname": "Corvus albus"
+      }
+    ],
+    "55": [
+      {
+        "sciname": "Cuculus gularis"
+      }
+    ],
+    "56": [
+      {
+        "sciname": "Cuculus clamosus"
+      }
+    ],
+    "57": [
+      {
+        "sciname": "Cuculus canorus"
+      }
+    ],
+    "58": [
+      {
+        "sciname": "Chrysococcyx caprius"
+      }
+    ],
+    "59": [
+      {
+        "sciname": "Clamator glandarius"
+      }
+    ],
+    "60": [
+      {
+        "sciname": "Clamator jacobinus"
+      }
+    ],
+    "61": [
+      {
+        "sciname": "Chrysococcyx klaas"
+      }
+    ],
+    "62": [
+      {
+        "sciname": "Clamator levaillantii"
+      }
+    ],
+    "63": [
+      {
+        "sciname": "Cuculus solitarius"
+      }
+    ],
+    "64": [
+      {
+        "sciname": "Pachycoccyx audeberti"
+      }
+    ],
+    "65": [
+      {
+        "sciname": "Campephaga flava"
+      }
+    ],
+    "66": [
+      {
+        "sciname": "Anhinga rufa"
+      }
+    ],
+    "67": [
+      {
+        "sciname": "Streptopelia capicola"
+      }
+    ],
+    "68": [
+      {
+        "sciname": "Turtur chalcospilos"
+      }
+    ],
+    "69": [
+      {
+        "sciname": "Spilopelia senegalensis"
+      }
+    ],
+    "70": [
+      {
+        "sciname": "Oena capensis"
+      }
+    ],
+    "71": [
+      {
+        "sciname": "Dicrurus adsimilis"
+      }
+    ],
+    "72": [
+      {
+        "sciname": "Anas sparsa"
+      }
+    ],
+    "73": [
+      {
+        "sciname": "Dendrocygna bicolor"
+      }
+    ],
+    "74": [
+      {
+        "sciname": "Sarkidiornis melanotos"
+      }
+    ],
+    "75": [
+      {
+        "sciname": "Dendrocygna viduata"
+      }
+    ],
+    "76": [
+      {
+        "sciname": "Anas undulata"
+      }
+    ],
+    "77": [
+      {
+        "sciname": "Haliaeetus vocifer"
+      }
+    ],
+    "78": [
+      {
+        "sciname": "Aquila spilogaster"
+      }
+    ],
+    "79": [
+      {
+        "sciname": "Hieraaetus ayresii"
+      }
+    ],
+    "80": [
+      {
+        "sciname": "Circaetus pectoralis"
+      }
+    ],
+    "81": [
+      {
+        "sciname": "Hieraaetus pennatus"
+      }
+    ],
+    "82": [
+      {
+        "sciname": "Circaetus cinereus"
+      }
+    ],
+    "83": [
+      {
+        "sciname": "Clanga pomarina"
+      }
+    ],
+    "84": [
+      {
+        "sciname": "Polemaetus bellicosus"
+      }
+    ],
+    "85": [
+      {
+        "sciname": "Aquila nipalensis"
+      }
+    ],
+    "86": [
+      {
+        "sciname": "Aquila rapax"
+      }
+    ],
+    "87": [
+      {
+        "sciname": "Hieraaetus wahlbergi"
+      }
+    ],
+    "88": [
+      {
+        "sciname": "Egretta alba"
+      }
+    ],
+    "89": [
+      {
+        "sciname": "Egretta garzetta"
+      }
+    ],
+    "90": [
+      {
+        "sciname": "Bubulcus ibis"
+      }
+    ],
+    "91": [
+      {
+        "sciname": "Ardea intermedia"
+      }
+    ],
+    "92": [
+      {
+        "sciname": "Eremomela usticollis"
+      }
+    ],
+    "93": [
+      {
+        "sciname": "Eremomela scotops"
+      }
+    ],
+    "94": [
+      {
+        "sciname": "Eremomela icteropygialis"
+      }
+    ],
+    "95": [
+      {
+        "sciname": "Falco amurensis"
+      }
+    ],
+    "96": [
+      {
+        "sciname": "Falco biarmicus"
+      }
+    ],
+    "97": [
+      {
+        "sciname": "Falco peregrinus"
+      }
+    ],
+    "98": [
+      {
+        "sciname": "Amadina fasciata"
+      }
+    ],
+    "99": [
+      {
+        "sciname": "Lagonosticta rhodopareia"
+      }
+    ],
+    "100": [
+      {
+        "sciname": "Lagonosticta senegala"
+      }
+    ],
+    "101": [
+      {
+        "sciname": "Lanius collaris"
+      }
+    ],
+    "102": [
+      {
+        "sciname": "Phoeniconaias minor"
+      }
+    ],
+    "103": [
+      {
+        "sciname": "Muscicapa adusta"
+      }
+    ],
+    "104": [
+      {
+        "sciname": "Terpsiphone viridis"
+      }
+    ],
+    "105": [
+      {
+        "sciname": "Muscicapa caerulescens"
+      }
+    ],
+    "106": [
+      {
+        "sciname": "Trochocercus cyanomelas"
+      }
+    ],
+    "107": [
+      {
+        "sciname": "Myioparus plumbeus"
+      }
+    ],
+    "108": [
+      {
+        "sciname": "Melaeornis mariquensis"
+      }
+    ],
+    "109": [
+      {
+        "sciname": "Melaeornis pallidus"
+      }
+    ],
+    "110": [
+      {
+        "sciname": "Melaenornis pammelaina"
+      }
+    ],
+    "111": [
+      {
+        "sciname": "Muscicapa striata"
+      }
+    ],
+    "112": [
+      {
+        "sciname": "Peliperdix coqui"
+      }
+    ],
+    "113": [
+      {
+        "sciname": "Dendroperdix sephaena"
+      }
+    ],
+    "114": [
+      {
+        "sciname": "Scleroptila shelleyi"
+      }
+    ],
+    "115": [
+      {
+        "sciname": "Corythaixoides concolor"
+      }
+    ],
+    "116": [
+      {
+        "sciname": "Nettapus auritus"
+      }
+    ],
+    "117": [
+      {
+        "sciname": "Alopochen aegyptiaca"
+      }
+    ],
+    "118": [
+      {
+        "sciname": "Plectropterus gambensis"
+      }
+    ],
+    "119": [
+      {
+        "sciname": "Accipiter tachiro"
+      }
+    ],
+    "120": [
+      {
+        "sciname": "Melierax metabates"
+      }
+    ],
+    "121": [
+      {
+        "sciname": "Melierax gabar"
+      }
+    ],
+    "122": [
+      {
+        "sciname": "Andropadus importunus"
+      }
+    ],
+    "123": [
+      {
+        "sciname": "Chlorocichla flaviventris"
+      }
+    ],
+    "124": [
+      {
+        "sciname": "Tringa nebularia"
+      }
+    ],
+    "125": [
+      {
+        "sciname": "Numida meleagris"
+      }
+    ],
+    "126": [
+      {
+        "sciname": "Scopus umbretta"
+      }
+    ],
+    "127": [
+      {
+        "sciname": "Polyboroides typus"
+      }
+    ],
+    "128": [
+      {
+        "sciname": "Macheiramphus alcinus"
+      }
+    ],
+    "129": [
+      {
+        "sciname": "Prionops retzii"
+      }
+    ],
+    "130": [
+      {
+        "sciname": "Prionops plumatus"
+      }
+    ],
+    "131": [
+      {
+        "sciname": "Egretta ardesiaca"
+      }
+    ],
+    "132": [
+      {
+        "sciname": "Nycticorax nycticorax"
+      }
+    ],
+    "133": [
+      {
+        "sciname": "Ardea melanocephala"
+      }
+    ],
+    "134": [
+      {
+        "sciname": "Ardea goliath"
+      }
+    ],
+    "135": [
+      {
+        "sciname": "Butorides striata"
+      }
+    ],
+    "136": [
+      {
+        "sciname": "Ardea cinerea"
+      }
+    ],
+    "137": [
+      {
+        "sciname": "Ardea purpurea"
+      }
+    ],
+    "138": [
+      {
+        "sciname": "Ardeola ralloides"
+      }
+    ],
+    "139": [
+      {
+        "sciname": "Gorsachius leuconotus"
+      }
+    ],
+    "140": [
+      {
+        "sciname": "Falco cuvierii"
+      }
+    ],
+    "141": [
+      {
+        "sciname": "Falco subbuteo"
+      }
+    ],
+    "142": [
+      {
+        "sciname": "Indicator indicator"
+      }
+    ],
+    "143": [
+      {
+        "sciname": "Indicator minor"
+      }
+    ],
+    "144": [
+      {
+        "sciname": "Upupa africana"
+      }
+    ],
+    "145": [
+      {
+        "sciname": "Lophocerus nasutus"
+      }
+    ],
+    "146": [
+      {
+        "sciname": "Bucorvus leadbeateri"
+      }
+    ],
+    "147": [
+      {
+        "sciname": "Tockus rufirostris"
+      }
+    ],
+    "148": [
+      {
+        "sciname": "Tockus leucomelas"
+      }
+    ],
+    "149": [
+      {
+        "sciname": "Bycanistes bucinator"
+      }
+    ],
+    "150": [
+      {
+        "sciname": "Threskiornis aethiopicus"
+      }
+    ],
+    "151": [
+      {
+        "sciname": "Bostrychia hagedash"
+      }
+    ],
+    "152": [
+      {
+        "sciname": "Vidua purpurascens"
+      }
+    ],
+    "153": [
+      {
+        "sciname": "Vidua chalybeata"
+      }
+    ],
+    "154": [
+      {
+        "sciname": "Actophilornis africanus"
+      }
+    ],
+    "155": [
+      {
+        "sciname": "Ispidina picta"
+      }
+    ],
+    "156": [
+      {
+        "sciname": "Halcyon albiventris"
+      }
+    ],
+    "157": [
+      {
+        "sciname": "Megaceryle maxima"
+      }
+    ],
+    "158": [
+      {
+        "sciname": "Halcyon leucocephala"
+      }
+    ],
+    "159": [
+      {
+        "sciname": "Alcedo semitorquata"
+      }
+    ],
+    "160": [
+      {
+        "sciname": "Alcedo cristata"
+      }
+    ],
+    "161": [
+      {
+        "sciname": "Ceryle rudis"
+      }
+    ],
+    "162": [
+      {
+        "sciname": "Halcyon chelicuti"
+      }
+    ],
+    "163": [
+      {
+        "sciname": "Halcyon senegalensis"
+      }
+    ],
+    "164": [
+      {
+        "sciname": "Elanus caeruleus"
+      }
+    ],
+    "165": [
+      {
+        "sciname": "Milvus aegyptius"
+      }
+    ],
+    "166": [
+      {
+        "sciname": "Lophotis ruficrista"
+      }
+    ],
+    "167": [
+      {
+        "sciname": "Vanellus armatus"
+      }
+    ],
+    "168": [
+      {
+        "sciname": "Vanellus coronatus"
+      }
+    ],
+    "169": [
+      {
+        "sciname": "Vanellus lugubris"
+      }
+    ],
+    "170": [
+      {
+        "sciname": "Vanellus albiceps"
+      }
+    ],
+    "171": [
+      {
+        "sciname": "Eremopterix leucotis"
+      }
+    ],
+    "172": [
+      {
+        "sciname": "Pinarocorys nigricans"
+      }
+    ],
+    "173": [
+      {
+        "sciname": "Mirafra rufocinnamomea"
+      }
+    ],
+    "174": [
+      {
+        "sciname": "Mirafra passerina"
+      }
+    ],
+    "175": [
+      {
+        "sciname": "Calandrella cinerea"
+      }
+    ],
+    "176": [
+      {
+        "sciname": "Mirafra africana"
+      }
+    ],
+    "177": [
+      {
+        "sciname": "Calendulauda sabota"
+      }
+    ],
+    "178": [
+      {
+        "sciname": "Macronyx croceus"
+      }
+    ],
+    "179": [
+      {
+        "sciname": "Lonchura cucullata"
+      }
+    ],
+    "180": [
+      {
+        "sciname": "Delichon urbicum"
+      }
+    ],
+    "181": [
+      {
+        "sciname": "Gallinula chloropus"
+      }
+    ],
+    "182": [
+      {
+        "sciname": "Paragallinula angulata"
+      }
+    ],
+    "183": [
+      {
+        "sciname": "Urocolius indicus"
+      }
+    ],
+    "184": [
+      {
+        "sciname": "Colius striatus"
+      }
+    ],
+    "185": [
+      {
+        "sciname": "Acridotheres tristis"
+      }
+    ],
+    "186": [
+      {
+        "sciname": "Cisticola fulvicapilla"
+      }
+    ],
+    "187": [
+      {
+        "sciname": "Caprimulgus europaeus"
+      }
+    ],
+    "188": [
+      {
+        "sciname": "Caprimulgus pectoralis"
+      }
+    ],
+    "189": [
+      {
+        "sciname": "Caprimulgus tristigma"
+      }
+    ],
+    "190": [
+      {
+        "sciname": "Caprimulgus vexillarius"
+      }
+    ],
+    "191": [
+      {
+        "sciname": "Caprimulgus rufigena"
+      }
+    ],
+    "192": [
+      {
+        "sciname": "Caprimulgus fossii"
+      }
+    ],
+    "193": [
+      {
+        "sciname": "Caprimulgus natalensis"
+      }
+    ],
+    "194": [
+      {
+        "sciname": "Oriolus auratus"
+      }
+    ],
+    "195": [
+      {
+        "sciname": "Oriolus larvatus"
+      }
+    ],
+    "196": [
+      {
+        "sciname": "Oriolus oriolus"
+      }
+    ],
+    "197": [
+      {
+        "sciname": "Pandion haliaetus"
+      }
+    ],
+    "198": [
+      {
+        "sciname": "Struthio camelus"
+      }
+    ],
+    "199": [
+      {
+        "sciname": "Tyto capensis"
+      }
+    ],
+    "200": [
+      {
+        "sciname": "Otus senegalensis"
+      }
+    ],
+    "201": [
+      {
+        "sciname": "Asio capensis"
+      }
+    ],
+    "202": [
+      {
+        "sciname": "Ptilopsis granti"
+      }
+    ],
+    "203": [
+      {
+        "sciname": "Bubo africanus"
+      }
+    ],
+    "204": [
+      {
+        "sciname": "Bubo lacteus"
+      }
+    ],
+    "205": [
+      {
+        "sciname": "Tyto alba"
+      }
+    ],
+    "206": [
+      {
+        "sciname": "Glaucidium capense"
+      }
+    ],
+    "207": [
+      {
+        "sciname": "Glaucidium perlatum"
+      }
+    ],
+    "208": [
+      {
+        "sciname": "Buphagus erythrorynchus"
+      }
+    ],
+    "209": [
+      {
+        "sciname": "Buphagus africanus"
+      }
+    ],
+    "210": [
+      {
+        "sciname": "Rostratula benghalensis"
+      }
+    ],
+    "211": [
+      {
+        "sciname": "Poicephalus cryptoxanthus"
+      }
+    ],
+    "212": [
+      {
+        "sciname": "Pelecanus rufescens"
+      }
+    ],
+    "213": [
+      {
+        "sciname": "Anthoscopus caroli"
+      }
+    ],
+    "214": [
+      {
+        "sciname": "Gymnoris superciliaris"
+      }
+    ],
+    "215": [
+      {
+        "sciname": "Treron calvus"
+      }
+    ],
+    "216": [
+      {
+        "sciname": "Anthus cinnamomeus"
+      }
+    ],
+    "217": [
+      {
+        "sciname": "Anthus caffer"
+      }
+    ],
+    "218": [
+      {
+        "sciname": "Tmetothylacus tenellus"
+      }
+    ],
+    "219": [
+      {
+        "sciname": "Charadrius hiaticula"
+      }
+    ],
+    "220": [
+      {
+        "sciname": "Charadrius pecuarius"
+      }
+    ],
+    "221": [
+      {
+        "sciname": "Charadrius tricollaris"
+      }
+    ],
+    "222": [
+      {
+        "sciname": "Glareola pratincola"
+      }
+    ],
+    "223": [
+      {
+        "sciname": "Prinia subflava"
+      }
+    ],
+    "224": [
+      {
+        "sciname": "Dryoscopus cubla"
+      }
+    ],
+    "225": [
+      {
+        "sciname": "Pytilia melba"
+      }
+    ],
+    "226": [
+      {
+        "sciname": "Coturnix delegorguei"
+      }
+    ],
+    "227": [
+      {
+        "sciname": "Quelea quelea"
+      }
+    ],
+    "228": [
+      {
+        "sciname": "Cossypha natalensis"
+      }
+    ],
+    "229": [
+      {
+        "sciname": "Cossypha heuglini"
+      }
+    ],
+    "230": [
+      {
+        "sciname": "Cossypha humeralis"
+      }
+    ],
+    "231": [
+      {
+        "sciname": "Cercotrichas quadrivirgata"
+      }
+    ],
+    "232": [
+      {
+        "sciname": "Cercotrichas leucophrys"
+      }
+    ],
+    "233": [
+      {
+        "sciname": "Eurystomus glaucurus"
+      }
+    ],
+    "234": [
+      {
+        "sciname": "Coracias garrulus"
+      }
+    ],
+    "235": [
+      {
+        "sciname": "Coracias caudatus"
+      }
+    ],
+    "236": [
+      {
+        "sciname": "Coracias naevius"
+      }
+    ],
+    "237": [
+      {
+        "sciname": "Calidris pugnax"
+      }
+    ],
+    "238": [
+      {
+        "sciname": "Pterocles bicinctus"
+      }
+    ],
+    "239": [
+      {
+        "sciname": "Actitis hypoleucos"
+      }
+    ],
+    "240": [
+      {
+        "sciname": "Calidris ferruginea"
+      }
+    ],
+    "241": [
+      {
+        "sciname": "Tringa ochropus"
+      }
+    ],
+    "242": [
+      {
+        "sciname": "Tringa glareola"
+      }
+    ],
+    "243": [
+      {
+        "sciname": "Psalidoprocne pristoptera"
+      }
+    ],
+    "244": [
+      {
+        "sciname": "Rhinopomastus cyanomelas"
+      }
+    ],
+    "245": [
+      {
+        "sciname": "Sagittarius serpentarius"
+      }
+    ],
+    "246": [
+      {
+        "sciname": "Accipiter badius"
+      }
+    ],
+    "247": [
+      {
+        "sciname": "Lanius minor"
+      }
+    ],
+    "248": [
+      {
+        "sciname": "Corvinella melanoleuca"
+      }
+    ],
+    "249": [
+      {
+        "sciname": "Lanius collurio"
+      }
+    ],
+    "250": [
+      {
+        "sciname": "Eurocephalus anguitimens"
+      }
+    ],
+    "251": [
+      {
+        "sciname": "Rynchops flavirostris"
+      }
+    ],
+    "252": [
+      {
+        "sciname": "Plocepasser mahali"
+      }
+    ],
+    "253": [
+      {
+        "sciname": "Passer domesticus"
+      }
+    ],
+    "254": [
+      {
+        "sciname": "Passer diffusus"
+      }
+    ],
+    "255": [
+      {
+        "sciname": "Accipiter minullus"
+      }
+    ],
+    "256": [
+      {
+        "sciname": "Platalea alba"
+      }
+    ],
+    "257": [
+      {
+        "sciname": "Pternistis natalensis"
+      }
+    ],
+    "258": [
+      {
+        "sciname": "Pternistis swainsonii"
+      }
+    ],
+    "259": [
+      {
+        "sciname": "Lamprotornis australis"
+      }
+    ],
+    "260": [
+      {
+        "sciname": "Lamprotornis nitens"
+      }
+    ],
+    "261": [
+      {
+        "sciname": "Lamprotornis chalybaeus"
+      }
+    ],
+    "262": [
+      {
+        "sciname": "Cinnyricinclus leucogaster"
+      }
+    ],
+    "263": [
+      {
+        "sciname": "Creatophora cinerea"
+      }
+    ],
+    "264": [
+      {
+        "sciname": "Himantopus himantopus"
+      }
+    ],
+    "265": [
+      {
+        "sciname": "Ciconia abdimii"
+      }
+    ],
+    "266": [
+      {
+        "sciname": "Ciconia nigra"
+      }
+    ],
+    "267": [
+      {
+        "sciname": "Leptoptilos crumenifer"
+      }
+    ],
+    "268": [
+      {
+        "sciname": "Ephippiorhynchus senegalensis"
+      }
+    ],
+    "269": [
+      {
+        "sciname": "Ciconia ciconia"
+      }
+    ],
+    "270": [
+      {
+        "sciname": "Ciconia episcopus"
+      }
+    ],
+    "271": [
+      {
+        "sciname": "Mycteria ibis"
+      }
+    ],
+    "272": [
+      {
+        "sciname": "Chalcomitra amethystina"
+      }
+    ],
+    "273": [
+      {
+        "sciname": "Hedydipna collaris"
+      }
+    ],
+    "274": [
+      {
+        "sciname": "Cinnyris mariquensis"
+      }
+    ],
+    "275": [
+      {
+        "sciname": "Chalcomitra senegalensis"
+      }
+    ],
+    "276": [
+      {
+        "sciname": "Cinnyris talatala"
+      }
+    ],
+    "277": [
+      {
+        "sciname": "Hirundo rustica"
+      }
+    ],
+    "278": [
+      {
+        "sciname": "Cecropis abyssinica"
+      }
+    ],
+    "279": [
+      {
+        "sciname": "Cecropis senegalensis"
+      }
+    ],
+    "280": [
+      {
+        "sciname": "Hirundo dimidiata"
+      }
+    ],
+    "281": [
+      {
+        "sciname": "Cecropis semirufa"
+      }
+    ],
+    "282": [
+      {
+        "sciname": "Hirundo smithii"
+      }
+    ],
+    "283": [
+      {
+        "sciname": "Cypsiurus parvus"
+      }
+    ],
+    "284": [
+      {
+        "sciname": "Tachymarptis melba"
+      }
+    ],
+    "285": [
+      {
+        "sciname": "Apus apus"
+      }
+    ],
+    "286": [
+      {
+        "sciname": "Apus affinis"
+      }
+    ],
+    "287": [
+      {
+        "sciname": "Apus caffer"
+      }
+    ],
+    "288": [
+      {
+        "sciname": "Tchagra senegalus"
+      }
+    ],
+    "289": [
+      {
+        "sciname": "Tchagra australis"
+      }
+    ],
+    "290": [
+      {
+        "sciname": "Anas capensis"
+      }
+    ],
+    "291": [
+      {
+        "sciname": "Anas erythrorhyncha"
+      }
+    ],
+    "292": [
+      {
+        "sciname": "Burhinus capensis"
+      }
+    ],
+    "293": [
+      {
+        "sciname": "Burhinus vermiculatus"
+      }
+    ],
+    "294": [
+      {
+        "sciname": "Turdus litsitsirupa"
+      }
+    ],
+    "295": [
+      {
+        "sciname": "Turdus libonyanus"
+      }
+    ],
+    "296": [
+      {
+        "sciname": "Pogoniulus chrysoconus"
+      }
+    ],
+    "297": [
+      {
+        "sciname": "Pogoniulus bilineatus"
+      }
+    ],
+    "298": [
+      {
+        "sciname": "Melaniparus niger"
+      }
+    ],
+    "299": [
+      {
+        "sciname": "Apaloderma narina"
+      }
+    ],
+    "300": [
+      {
+        "sciname": "Tauraco porphyreolophus"
+      }
+    ],
+    "301": [
+      {
+        "sciname": "Gyps coprotheres"
+      }
+    ],
+    "302": [
+      {
+        "sciname": "Neophron percnopterus"
+      }
+    ],
+    "303": [
+      {
+        "sciname": "Necrosyrtes monachus"
+      }
+    ],
+    "304": [
+      {
+        "sciname": "Torgos tracheliotos"
+      }
+    ],
+    "305": [
+      {
+        "sciname": "Gyps rueppelli"
+      }
+    ],
+    "306": [
+      {
+        "sciname": "Gyps africanus"
+      }
+    ],
+    "307": [
+      {
+        "sciname": "Trigonoceps occipitalis"
+      }
+    ],
+    "308": [
+      {
+        "sciname": "Motacilla aguimp"
+      }
+    ],
+    "309": [
+      {
+        "sciname": "Acrocephalus baeticatus"
+      }
+    ],
+    "310": [
+      {
+        "sciname": "Bradypterus baboecala"
+      }
+    ],
+    "311": [
+      {
+        "sciname": "Hippolais olivetorum"
+      }
+    ],
+    "312": [
+      {
+        "sciname": "Calamonastes stierlingi"
+      }
+    ],
+    "313": [
+      {
+        "sciname": "Phylloscopus trochilus"
+      }
+    ],
+    "314": [
+      {
+        "sciname": "Uraeginthus angolensis"
+      }
+    ],
+    "315": [
+      {
+        "sciname": "Estrilda astrild"
+      }
+    ],
+    "316": [
+      {
+        "sciname": "Uraeginthus granatinus"
+      }
+    ],
+    "317": [
+      {
+        "sciname": "Ploceus intermedius"
+      }
+    ],
+    "318": [
+      {
+        "sciname": "Bubalornis niger"
+      }
+    ],
+    "319": [
+      {
+        "sciname": "Anaplectes rubriceps"
+      }
+    ],
+    "320": [
+      {
+        "sciname": "Ploceus velatus"
+      }
+    ],
+    "321": [
+      {
+        "sciname": "Ploceus ocularis"
+      }
+    ],
+    "322": [
+      {
+        "sciname": "Amblyospiza albifrons"
+      }
+    ],
+    "323": [
+      {
+        "sciname": "Ploceus cucullatus"
+      }
+    ],
+    "324": [
+      {
+        "sciname": "Vidua paradisaea"
+      }
+    ],
+    "325": [
+      {
+        "sciname": "Vidua macroura"
+      }
+    ],
+    "326": [
+      {
+        "sciname": "Vidua regia"
+      }
+    ],
+    "327": [
+      {
+        "sciname": "Euplectes albonotatus"
+      }
+    ],
+    "328": [
+      {
+        "sciname": "Phoeniculus purpureus"
+      }
+    ],
+    "329": [
+      {
+        "sciname": "Chloropicus namaquus"
+      }
+    ],
+    "330": [
+      {
+        "sciname": "Campethera bennettii"
+      }
+    ],
+    "331": [
+      {
+        "sciname": "Dendropicos fuscescens"
+      }
+    ],
+    "332": [
+      {
+        "sciname": "Campethera abingoni"
       }
     ]
   },

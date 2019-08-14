@@ -4,6 +4,7 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="title_activity_scrolling">ScrollingActivity</string>
+
     <string-array name="mammals">
 
         <item>AARDVARK</item>
@@ -108,12 +109,354 @@
     </string-array>
 
     <string-array name="birds">
-
+        <item>Yellow-breasted Apalis</item>
+        <item>Pied Avocet</item>
+        <item>Arrow-marked Babbler</item>
+        <item>Southern Pied Babbler</item>
+        <item>Acacia Pied Barbet</item>
+        <item>Black-collared Barbet</item>
+        <item>Crested Barbet</item>
+        <item>Bateleur</item>
+        <item>Chinspot Batis</item>
+        <item>European Bee-eater</item>
+        <item>Little Bee-eater</item>
+        <item>Southern Carmine Bee-eater</item>
+        <item>White-fronted Bee-eater</item>
+        <item>White-throated Bee-eater</item>
+        <item>Southern Red Bishop</item>
+        <item>Yellow-crowned Bishop</item>
+        <item>Dwarf Bittern</item>
+        <item>Little Bittern</item>
+        <item>Southern Boubou</item>
+        <item>Terrestrial Brownbul</item>
+        <item>Brubru</item>
+        <item>Dark-capped Bulbul</item>
+        <item>Cinnamon-breasted Bunting</item>
+        <item>Golden-breasted Bunting</item>
+        <item>Lark-like Bunting</item>
+        <item>Gorgeous Bush-Shrike</item>
+        <item>Grey-headed Bush-Shrike</item>
+        <item>Orange-breasted Bush-Shrike</item>
+        <item>Black-bellied Bustard</item>
+        <item>Kori Bustard</item>
+        <item>Common (Kurrichane) Buttonquail</item>
+        <item>Common (Steppe) Buzzard</item>
+        <item>European Honey Buzzard</item>
+        <item>Lizard Buzzard</item>
+        <item>Green-backed Camaroptera</item>
+        <item>Yellow-fronted Canary</item>
+        <item>Arnot’s Chat</item>
+        <item>Mocking Cliff Chat</item>
+        <item>Rattling Cisticola</item>
+        <item>Red-faced Cisticola</item>
+        <item>Zitting Cisticola</item>
+        <item>Red-knobbed coot</item>
+        <item>Reed Cormorant</item>
+        <item>White-breasted Cormorant</item>
+        <item>Black Coucal</item>
+        <item>Burchell’s Coucal</item>
+        <item>Bronze-winged Courser</item>
+        <item>Temminck\'s Courser</item>
+        <item>African Crake</item>
+        <item>Baillon\'s Crake</item>
+        <item>Black Crake</item>
+        <item>Corn Crake</item>
+        <item>Long-billed crombec</item>
+        <item>Pied Crow</item>
+        <item>African Cuckoo</item>
+        <item>Black Cuckoo</item>
+        <item>Common Cuckoo</item>
+        <item>Diederik Cuckoo</item>
+        <item>Great Spotted Cuckoo</item>
+        <item>Jacobin Cuckoo</item>
+        <item>Klaas\'s Cuckoo</item>
+        <item>Levaillant\'s Cuckoo</item>
+        <item>Red-chested Cuckoo</item>
+        <item>Thick-billed Cuckoo</item>
+        <item>Black Cuckooshrike</item>
+        <item>African Darter</item>
+        <item>Cape Turtle (Ring-necked) Dove</item>
+        <item>Emerald-spotted Wood Dove</item>
+        <item>Laughing Dove</item>
+        <item>Namaqua Dove</item>
+        <item>Fork-tailed Drongo</item>
+        <item>African Black Duck</item>
+        <item>Fulvous Whistling Duck</item>
+        <item>Knob-billed Duck</item>
+        <item>White-faced Whistling Duck</item>
+        <item>Yellow-billed Duck</item>
+        <item>African Fish Eagle</item>
+        <item>African Hawk Eagle</item>
+        <item>Ayres\'s Hawk Eagle</item>
+        <item>Black-chested Snake Eagle</item>
+        <item>Booted Eagle</item>
+        <item>Brown Snake Eagle</item>
+        <item>Lesser Spotted Eagle</item>
+        <item>Martial Eagle</item>
+        <item>Steppe Eagle</item>
+        <item>Tawny Eagle</item>
+        <item>Wahlberg’s Eagle</item>
+        <item>Great Egret</item>
+        <item>Little Egret</item>
+        <item>Western Cattle Egret</item>
+        <item>Yellow-billed (Intermediate) Egret</item>
+        <item>Burnt-necked Eremomela</item>
+        <item>Green-capped Eremomela</item>
+        <item>Yellow-bellied Eremomela</item>
+        <item>Amur Falcon</item>
+        <item>Lanner Falcon</item>
+        <item>Peregrine Falcon</item>
+        <item>Cut-throat Finch</item>
+        <item>Jameson\'s Firefinch</item>
+        <item>Red-billed Firefinch</item>
+        <item>Southern (Common) Fiscal</item>
+        <item>Lesser Flamingo</item>
+        <item>African Dusky Flycatcher</item>
+        <item>African Paradise Flycatcher</item>
+        <item>Ashy Flycatcher</item>
+        <item>Blue-mantled Crested Flycatcher</item>
+        <item>Grey Tit-flycatcher</item>
+        <item>Marico flycatcher</item>
+        <item>Pale flycatcher</item>
+        <item>Southern Black flycatcher</item>
+        <item>Spotted flycatcher</item>
+        <item>Coqui Francolin</item>
+        <item>Crested Francolin</item>
+        <item>Shelley’s Francolin</item>
+        <item>Grey Go-away-bird</item>
+        <item>African Pygmy Goose</item>
+        <item>Egyptian Goose</item>
+        <item>Spur-winged Goose</item>
+        <item>African Goshawk</item>
+        <item>Dark Chanting Goshawk</item>
+        <item>Gabar Goshawk</item>
+        <item>Sombre Greenbul</item>
+        <item>Yellow-bellied Greenbul</item>
+        <item>Common Greenshank</item>
+        <item>Helmeted Guineafowl</item>
+        <item>Hamerkop</item>
+        <item>African Harrier-Hawk</item>
+        <item>Bat Hawk</item>
+        <item>Retz\'s Helmet-Shrike</item>
+        <item>White-crested Helmet-Shrike</item>
+        <item>Black Heron</item>
+        <item>Black-crowned Night Heron</item>
+        <item>Black-headed Heron</item>
+        <item>Goliath Heron</item>
+        <item>Green-backed (Striated) Heron</item>
+        <item>Grey Heron</item>
+        <item>Purple Heron</item>
+        <item>Squacco Heron</item>
+        <item>White-backed Night Heron</item>
+        <item>African Hobby</item>
+        <item>Eurasian Hobby</item>
+        <item>Greater Honeyguide</item>
+        <item>Lesser Honeyguide</item>
+        <item>African Hoopoe</item>
+        <item>African Grey Hornbill</item>
+        <item>Southern Ground-Hornbill</item>
+        <item>Southern Red-billed Hornbill</item>
+        <item>Southern Yellow-billed Hornbill</item>
+        <item>Trumpeter Hornbill</item>
+        <item>African Sacred Ibis</item>
+        <item>Hadeda (Hadada) Ibis</item>
+        <item>Purple Indigobird</item>
+        <item>Village Indigobird</item>
+        <item>African Jacana</item>
+        <item>African Pygmy Kingfisher</item>
+        <item>Brown-hooded Kingfisher</item>
+        <item>Giant Kingfisher</item>
+        <item>Grey-headed Kingfisher</item>
+        <item>Half-collared Kingfisher</item>
+        <item>Malachite Kingfisher</item>
+        <item>Pied Kingfisher</item>
+        <item>Striped Kingfisher</item>
+        <item>Woodland Kingfisher</item>
+        <item>Black-winged Kite</item>
+        <item>Yellow-billed Kite</item>
+        <item>Red-crested Korhaan</item>
+        <item>Blacksmith Lapwing</item>
+        <item>Crowned Lapwing</item>
+        <item>Senegal Lapwing</item>
+        <item>White-crowned Lapwing</item>
+        <item>Chestnut-backed Sparrow-lark</item>
+        <item>Dusky Lark</item>
+        <item>Flappet Lark</item>
+        <item>Monotonous Lark</item>
+        <item>Red-capped Lark</item>
+        <item>Rufous-naped Lark</item>
+        <item>Sabota Lark</item>
+        <item>Yellow-throated Longclaw</item>
+        <item>Bronze Mannikin</item>
+        <item>Common House Martin</item>
+        <item>Common Moorhen</item>
+        <item>Lesser Moorhen</item>
+        <item>Red-faced Mousebird</item>
+        <item>Speckled Mousebird</item>
+        <item>Common Myna</item>
+        <item>Neddicky</item>
+        <item>European Nightjar</item>
+        <item>Fiery-necked Nightjar</item>
+        <item>Freckled Nightjar</item>
+        <item>Pennant-winged Nightjar</item>
+        <item>Rufous-cheeked Nightjar</item>
+        <item>Square-tailed Nightjar</item>
+        <item>Swamp Nightjar</item>
+        <item>African Golden Oriole</item>
+        <item>Black-headed Oriole</item>
+        <item>Eurasian Golden Oriole</item>
+        <item>Western Osprey</item>
+        <item>Common Ostrich</item>
+        <item>African Grass Owl</item>
+        <item>African Scops Owl</item>
+        <item>Marsh Owl</item>
+        <item>Southern White-faced Owl</item>
+        <item>Spotted Eagle-Owl</item>
+        <item>Verreaux’s Eagle-Owl</item>
+        <item>Western Barn Owl</item>
+        <item>African Barred Owlet</item>
+        <item>Pearl-spotted Owlet</item>
+        <item>Red-billed Oxpecker</item>
+        <item>Yellow-billed Oxpecker</item>
+        <item>Greater Painted-snipe</item>
+        <item>Brown-headed Parrot</item>
+        <item>Pink-backed Pelican</item>
+        <item>Grey Penduline-tit</item>
+        <item>Yellow-throated Petronia</item>
+        <item>African Green Pigeon</item>
+        <item>African Pipit</item>
+        <item>Bushveld Pipit</item>
+        <item>Golden Pipit</item>
+        <item>Common Ringed Plover</item>
+        <item>Kittlitz’s Plover</item>
+        <item>Three-banded Plover</item>
+        <item>Collared Pratincole</item>
+        <item>Tawny-flanked Prinia</item>
+        <item>Black-backed Puffback</item>
+        <item>Green-winged Pytilia</item>
+        <item>Harlequin Quail</item>
+        <item>Red-billed Quelea</item>
+        <item>Red-capped Robin-chat</item>
+        <item>White-browed Robin-chat</item>
+        <item>White-throated Robin-chat</item>
+        <item>Bearded Scrub Robin</item>
+        <item>White-browed Scrub Robin</item>
+        <item>Broad-billed Roller</item>
+        <item>European Roller</item>
+        <item>Lilac-breasted Roller</item>
+        <item>Purple Roller</item>
+        <item>Ruff</item>
+        <item>Double-banded Sandgrouse</item>
+        <item>Common Sandpiper</item>
+        <item>Curlew Sandpiper</item>
+        <item>Green Sandpiper</item>
+        <item>Wood Sandpiper</item>
+        <item>Black Saw-wing</item>
+        <item>Common Scimitarbill</item>
+        <item>Secretarybird</item>
+        <item>Shikra</item>
+        <item>Lesser Grey Shrike</item>
+        <item>Magpie Shrike</item>
+        <item>Red-backed Shrike</item>
+        <item>Southern White-crowned Shrike</item>
+        <item>African Skimmer</item>
+        <item>White-browed Sparrow-Weaver</item>
+        <item>House Sparrow</item>
+        <item>Southern Grey-headed Sparrow</item>
+        <item>Little Sparrowhawk</item>
+        <item>African Spoonbill</item>
+        <item>Natal Spurfowl</item>
+        <item>Swainson’s Spurfowl</item>
+        <item>Burchell’s Starling</item>
+        <item>Cape Glossy (Cape) Starling</item>
+        <item>Greater Blue-eared Starling</item>
+        <item>Violet-backed Starling</item>
+        <item>Wattled Starling</item>
+        <item>Black-winged Stilt</item>
+        <item>Abdim’s Stork</item>
+        <item>Black Stork</item>
+        <item>Marabou Stork</item>
+        <item>Saddle-billed Stork</item>
+        <item>White Stork</item>
+        <item>Woolly-necked Stork</item>
+        <item>Yellow-billed Stork</item>
+        <item>Amethyst Sunbird</item>
+        <item>Collared Sunbird</item>
+        <item>Marico Sunbird</item>
+        <item>Scarlet-chested Sunbird</item>
+        <item>White-bellied Sunbird</item>
+        <item>Barn Swallow</item>
+        <item>Lesser Striped Swallow</item>
+        <item>Mosque Swallow</item>
+        <item>Pearl-breasted Swallow</item>
+        <item>Red-breasted Swallow</item>
+        <item>Wire-tailed Swallow</item>
+        <item>African Palm Swift</item>
+        <item>Alpine Swift</item>
+        <item>Common Swift</item>
+        <item>Little Swift</item>
+        <item>White-rumped Swift</item>
+        <item>Black-crowned Tchagra</item>
+        <item>Brown-crowned Tchagra</item>
+        <item>Cape Teal</item>
+        <item>Red-billed Teal</item>
+        <item>Spotted Thick-knee</item>
+        <item>Water Thick-knee</item>
+        <item>Groundscraper Thrush</item>
+        <item>Kurrichane Thrush</item>
+        <item>Yellow-fronted Tinkerbird</item>
+        <item>Yellow-rumped Tinkerbird</item>
+        <item>Southern Black Tit</item>
+        <item>Narina Trogon</item>
+        <item>Purple-crested Turaco</item>
+        <item>Cape Vulture</item>
+        <item>Egyptian Vulture</item>
+        <item>Hooded Vulture</item>
+        <item>Lappet-faced Vulture</item>
+        <item>Rüppell’s Vulture</item>
+        <item>White-backed Vulture</item>
+        <item>White-headed Vulture</item>
+        <item>African Pied Wagtail</item>
+        <item>African Reed Warbler</item>
+        <item>Little Rush Warbler</item>
+        <item>Olive-tree Warbler</item>
+        <item>Stierling’s Wren-Warbler</item>
+        <item>Willow Warbler</item>
+        <item>Blue Waxbill</item>
+        <item>Common Waxbill</item>
+        <item>Violet-eared Waxbill</item>
+        <item>Lesser Masked Weaver</item>
+        <item>Red-billed Buffalo Weaver</item>
+        <item>Red-headed Weaver</item>
+        <item>Southern Masked Weaver</item>
+        <item>Spectacled Weaver</item>
+        <item>Thick-billed Weaver</item>
+        <item>Village Weaver</item>
+        <item>Long-tailed Paradise Whydah</item>
+        <item>Pin-tailed Whydah</item>
+        <item>Shaft-tailed Whydah</item>
+        <item>White-winged Widowbird</item>
+        <item>Green Wood-hoopoe</item>
+        <item>Bearded Woodpecker</item>
+        <item>Bennett’s Woodpecker</item>
+        <item>Cardinal Woodpecker</item>
+        <item>Golden-tailed Woodpecker</item>
     </string-array>
+
+    <string-array name="sections">
+        <item>@string/plants</item>
+        <item>@string/birds</item>
+        <item>@string/mammals</item>
+        <item>@string/reptilesandamphibians</item>
+    </string-array>
+
     <string name="action_settings">Settings</string>
     <string name="plants">Plants</string>
     <string name="birds">Birds</string>
-    <string name="textview">TextView</string>
     <string name="mammals">Mammals</string>
     <string name="reptilesandamphibians">Reptiles\nAnd\nAmphibians</string>
+    <string name="close">Close</string>
+    <string name="test_description">TEST DESCRIPTION</string>
+    <string name="test_scientific_name">TEST SCIENTIFIC NAME</string>
+
 </resources>

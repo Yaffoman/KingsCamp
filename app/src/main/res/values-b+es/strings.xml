@@ -1,0 +1,120 @@
+<resources>
+    <string name="app_name">Campamento de Reyes</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string-array name="mammals">
+
+        <item>AARDVARK</item>
+        <item>AARDWOLF</item>
+        <item>AFRICAN WILDCAT</item>
+        <item>CHACMA BABOON</item>
+        <item>CAPE BUFFALO</item>
+        <item>BUSHBUCK</item>
+        <item>BUSHBABY - LESSER</item>
+        <item>CARACAL</item>
+        <item>CHEETAH</item>
+        <item>CIVET</item>
+        <item>DUIKER - COMMON</item>
+        <item>ELEPHANT</item>
+        <item>GIRAFFE</item>
+        <item>GENET - SMALL SPOTTED</item>
+        <item>GENET - LARGE SPOTTED</item>
+        <item>GRYSBOK - SHARPE\'S</item>
+        <item>HARE - SCRUB</item>
+        <item>HIPPOPOTAMUS</item>
+        <item>HONEY BADGER</item>
+        <item>HYAENA - SPOTTED</item>
+        <item>IMPALA</item>
+        <item>JACKAL - BLACKBACKED</item>
+        <item>JACKAL - SIDE STRIPED</item>
+        <item>KUDU</item>
+        <item>LEOPARD</item>
+        <item>LION</item>
+        <item>MONGOOSE - SLENDER</item>
+        <item>MONGOOSE - BANDED</item>
+        <item>MONGOOSE - DWARF</item>
+        <item>MONGOOSE - WHITETAILED</item>
+        <item>MONKEY - VERVET</item>
+        <item>NYALA</item>
+        <item>PANGOLIN</item>
+        <item>PORCUPINE - CAPE</item>
+        <item>RHINO - WHITE</item>
+        <item>SERVAL</item>
+        <item>SQUIRREL - TREE</item>
+        <item>STEENBOK</item>
+        <item>TSSESSEBE</item>
+        <item>WARTHOG</item>
+        <item>WATERBUCK</item>
+        <item>WILDEBEEST</item>
+        <item>WILDDOG</item>
+
+    </string-array>
+
+    <string-array name="plants">
+        <item>MARULA</item>
+        <item>KNOB THORN</item>
+        <item>MOPANI</item>
+        <item>RED BUSHWILLOW</item>
+        <item>RUSSET BUSHWILLOW</item>
+        <item>LEADWOOD</item>
+        <item>LARGE FRUITED BUSHWILLOW</item>
+        <item>LOWVELD CLUSTER LEAF</item>
+        <item>SILVER CLUSTER LEAF</item>
+        <item>JACKALBERRY</item>
+        <item>SAVANNA GARDENIA</item>
+        <item>WILD DATE PALM</item>
+        <item>LALA PALM</item>
+        <item>LARGE LEAF ROCKFIG</item>
+        <item>SYCAMORE FIG</item>
+        <item>SMALL SOURPLUM </item>
+        <item>SOURPLUM</item>
+        <item>ANA TREE</item>
+        <item>UMBRELLA THORN</item>
+        <item>SICKLE BUSH</item>
+        <item>WEEPING BOER BEAN</item>
+        <item>SJAMBOKPOD</item>
+        <item>WEEPING WATTLE</item>
+        <item>WILD MANGO</item>
+        <item>TREE WISTERIA</item>
+        <item>ZEBRAWOOD</item>
+        <item>APPLE LEAF</item>
+        <item>NYALA TREE</item>
+        <item>SMALL KNOBWOOD</item>
+        <item>WHITE SERINGA</item>
+        <item>TALL COMMON CORKWOOD</item>
+        <item>TAMBOTI</item>
+        <item>FALSE MARULA</item>
+        <item>WHITE RESIN TREE</item>
+        <item>COMMON RESIN TREE</item>
+        <item>COMMON SPIKE THORN</item>
+        <item>TRANSVAAL SAFFRON</item>
+        <item>JACKET PLUM</item>
+        <item>BUFFALO THORN</item>
+        <item>GIANT RAISIN</item>
+        <item>SILVER RAISIN</item>
+        <item>COMMON STAR CHESTNUT</item>
+        <item>MAGIC GUARRI</item>
+        <item>KNOBBLY CREEPER</item>
+        <item>POTATO BUSH</item>
+        <item>SANDPAPER RAISIN</item>
+        <item>DWARF BOER BEAN</item>
+        <item>RED SPIKE THORN</item>
+        <item>PORCUPINE BUSH</item>
+        <item>FLAKY THORN</item>
+        <item>MOPANE POMEGRANITE</item>
+        <item>IMPALA LILY</item>
+    </string-array>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="plants">Plants</string>
+    <string name="birds">Birds</string>
+    <string name="mammals">Mammals</string>
+    <string name="reptilesandamphibians">Reptiles\nAnd\nAmphibians</string>
+    <string name="close">Close</string>
+    <string name="test_description">TEST DESCRIPTION</string>
+    <string name="test_scientific_name">TEST SCIENTIFIC NAME</string>
+
+</resources>

@@ -22,18 +22,20 @@ import java.util.Locale;
 import java.util.Set;
 
 public class MainActivity extends AppCompatActivity {
-    String[] Sections = {"Mammals", "Birds", "Plants", "Reptiles"};
+    String[] sections;
     String SECTION_KEY = "SECTION";
     String FIRST = "FIRST";
     int NUM_MAMMALS = 200;
     String ARRAY_NAME = "myArr";
 
 
-    int TOTAL_SPECIES = 93;
+
     int TOTAL_MAMMALS = 43;
     int TOTAL_PLANTS = 50;
-    int TOTAL_BIRDS = 10;//TODO
+    int TOTAL_BIRDS = 333;
     int TOTAL_REPTILES = 43;//TODO
+    int TOTAL_SPECIES = TOTAL_BIRDS + TOTAL_PLANTS + TOTAL_MAMMALS + TOTAL_REPTILES;
+
     int seen;
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -58,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         BottomNavigationView navView = findViewById(R.id.nav_view);
         navView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-
+        sections = getResources().getStringArray(R.array.sections);
         final ProgressBar progressBar = (ProgressBar) findViewById(R.id.reptile_progress);
         progressBar.setProgress(50);
     }
@@ -76,25 +78,26 @@ public class MainActivity extends AppCompatActivity {
         super.onStart();
 
         int completed = 0;
-
-        for(String s : Sections) {
+        int ctr = 0;
+        for (String s : sections) {
             SharedPreferences sharedPreferences = getSharedPreferences(s,MODE_PRIVATE);
             int s_completed = sharedPreferences.getInt(s + "_completed", 0);
             completed += s_completed;
-            switch (s) {
-                case "Mammals":
+            switch (ctr) {
+                case 2:
                     ((ProgressBar) findViewById(R.id.mammal_progress)).setProgress(100 * s_completed / TOTAL_MAMMALS);
                     break;
-                case "Reptiles":
+                case 3:
                     ((ProgressBar) findViewById(R.id.reptile_progress)).setProgress(100 * s_completed / TOTAL_REPTILES);
                     break;
-                case "Birds":
+                case 1:
                     ((ProgressBar) findViewById(R.id.bird_progress)).setProgress(100 * s_completed / TOTAL_BIRDS);
                     break;
-                case "Plants":
+                case 0:
                     ((ProgressBar) findViewById(R.id.plant_progress)).setProgress(100 * s_completed / TOTAL_PLANTS);
                     break;
             }
+            ctr++;
 
         }
         seen = completed;

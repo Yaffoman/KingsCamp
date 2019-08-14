@@ -39,13 +39,27 @@ public class SpecialDialog extends Dialog implements
 
     SpecialDialog(Activity a, String name, String specie) {
         super(a);
+        int index = 0;
+        switch (specie) {
+            case "mammals":
+                index = 0;
+            case "birds":
+                index = 1;
+            case "plants":
+                index = 2;
+        }
         try {
 
             JSONObject obj = new JSONObject(loadJSONFromAsset(a));
+            JSONObject speciesArr = obj.getJSONObject(specie);
+            JSONArray specieArr = speciesArr.getJSONArray(name);
+            JSONObject myObj = specieArr.getJSONObject(0);
+
+            sciname = myObj.getString("sciname");
+            description = obj.getJSONObject(specie).getJSONArray(name.toLowerCase()).getJSONObject(0).getString("description");
             String img = obj.getJSONObject(specie).getJSONArray(name.toLowerCase()).getJSONObject(0).getString("imageid");
             imageID = a.getResources().getIdentifier("@drawable/" + img, "drawable", a.getPackageName());
-            sciname = obj.getJSONObject(specie).getJSONArray(name.toLowerCase()).getJSONObject(0).getString("sciname");
-            description = obj.getJSONObject(specie).getJSONArray(name.toLowerCase()).getJSONObject(0).getString("description");
+
         } catch (JSONException e) {
             e.printStackTrace();
         }

@@ -1,0 +1,118 @@
+<resources>
+    <string name="app_name">Kings Camp</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string-array name="mammals">
+        <item>ERDVARK</item>
+        <item>AARDWOLF</item>
+        <item>VAALBOSKAT</item>
+        <item>BOBBEJAAN</item>
+        <item>BUFFEL</item>
+        <item>BOSBOK</item>
+        <item>NAGAPIE</item>
+        <item>ROOIKAT</item>
+        <item>JAGLUIPERD</item>
+        <item>SIVET</item>
+        <item>GEWONE DUIKER</item>
+        <item>OLIFANT</item>
+        <item>KAMEELPERD</item>
+        <item>KLEINKOLMUSKEJAATKAT</item>
+        <item>GROOTKOLMUSKEJAATKAT</item>
+        <item>SHARPES GRYSBOK</item>
+        <item>KOLHAAS</item>
+        <item>SEEKOEI</item>
+        <item>RATEL</item>
+        <item>GEVELKTE HIëNA</item>
+        <item>ROOIBOK</item>
+        <item>ROOIJAKKALS</item>
+        <item>WITKWASJAKKELS</item>
+        <item>KOEDOE</item>
+        <item>LUIPERD</item>
+        <item>LEEU</item>
+        <item>SWARTKWAS MUISHOND</item>
+        <item>GEBANDE MUISHOND</item>
+        <item>DWERG MUISHOND</item>
+        <item>WITSTERT MUISHOND</item>
+        <item>BLOUAAP</item>
+        <item>NJALA</item>
+        <item>IETERMAGOG</item>
+        <item>YSTERVARK</item>
+        <item>WITRENOSTER</item>
+        <item>TIERBOSKAT</item>
+        <item>BOOM EEKHORING</item>
+        <item>STEENBOK</item>
+        <item>TSESSEBE</item>
+        <item>VLAKVARK</item>
+        <item>WATERBOK</item>
+        <item>BLOUWILDEBEES</item>
+        <item>WILDEHOND</item>
+    </string-array>
+
+    <string-array name="plants">
+        <item>MAROELA</item>
+        <item>KNOPPIESDORING</item>
+        <item>MOPANIE</item>
+        <item>ROOI BOSWILG</item>
+        <item>KIERIEKLAPPER</item>
+        <item>HARDEKOOL</item>
+        <item>RAASBLAAR</item>
+        <item>STERKBOS</item>
+        <item>VAALBOS</item>
+        <item>JAKKALSBESSIE</item>
+        <item>TRANSVAAL KATJIEPIERING</item>
+        <item>WILDE DADEL PALM</item>
+        <item>LALA PALM</item>
+        <item>GROOT BLAAR ROTSVY</item>
+        <item>GEWONE TROSVY</item>
+        <item>KLEIN SUURPRUIM</item>
+        <item>SUURPLUIM</item>
+        <item>ANA BOOM</item>
+        <item>HAAK EN STEEK</item>
+        <item>SEKELBOS</item>
+        <item>HUIL BOER BOON</item>
+        <item>SAMBOKPEUL</item>
+        <item>HUILBOOM</item>
+        <item>WILDE MANGO</item>
+        <item>VAN WYKS HOUT</item>
+        <item>SEBRA HOUT</item>
+        <item>APPELBLAAR</item>
+        <item>NJALA BOOM</item>
+        <item>KLEIN PERDEPRAM</item>
+        <item>WIT SERING</item>
+        <item>GROOT GEWONE KANNIEDOOD</item>
+        <item>TAMBOTIE</item>
+        <item>BASTER MAROELA</item>
+        <item>WITHAAR PUISBOOM</item>
+        <item>GEWONE HAAR PUISBOOM</item>
+        <item>GEWONE PENDORING</item>
+        <item>TRANSVAAL SAFFRAAN</item>
+        <item>DOPPRUIM</item>
+        <item>BLINK BLAAR WAG-\'N-BIETJIE</item>
+        <item>REUSE ROSYNTJIE</item>
+        <item>VAAL ROSYNTJIE</item>
+        <item>GEWONE STERKASTAING</item>
+        <item>TOWER GWARRI</item>
+        <item>KNOPPIES KLIMOP</item>
+        <item>AARTAPPELBOS</item>
+        <item>SKURWE ROSYNTJIE</item>
+        <item>KLEIN BOER BOON</item>
+        <item>ROOI PENDORING</item>
+        <item>YSTERVARKBOS</item>
+        <item>SKILFERDORING</item>
+        <item>MOPANIE GRANAAT</item>
+        <item>IMPALA LELIE</item>
+    </string-array>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="plants">Plante</string>
+    <string name="birds">" Voëls"</string>
+    <string name="mammals">Soogdiere</string>
+    <string name="reptilesandamphibians">Reptiele\nen\nAmfibieë</string>
+    <string name="test_scientific_name">TEST SCIENTIFIC NAME</string>
+    <string name="test_description">TEST DESCRIPTION</string>
+    <string name="close">Naby</string>
+
+</resources>

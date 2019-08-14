@@ -17,6 +17,8 @@ import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Locale;
 
 import static lerner.ethan.kingscamp.SpecialDialog.species.*;
@@ -46,7 +48,22 @@ public class ScrollingActivity extends AppCompatActivity {
     private void fillArray() {
         String[] speciesArray;
         LinearLayout outerLinear = findViewById(R.id.linlayout);
-
+        String[] sections = getResources().getStringArray(R.array.sections);
+        int index = Arrays.asList(sections).indexOf(section);
+        switch (index) {
+            case 0:
+                speciesArray = getResources().getStringArray(R.array.plants);
+                break;
+            case 1:
+                speciesArray = getResources().getStringArray(R.array.birds);
+                break;
+            case 2:
+                speciesArray = getResources().getStringArray(R.array.mammals);
+                break;
+            default:
+                speciesArray = getResources().getStringArray(R.array.mammals);
+        }
+        /*
         if (section.compareTo("Mammals") == 0)
             speciesArray = getResources().getStringArray(R.array.mammals);
         else if (section.compareTo("Plants") == 0)
@@ -55,7 +72,7 @@ public class ScrollingActivity extends AppCompatActivity {
             speciesArray = getResources().getStringArray(R.array.birds);
         else
             speciesArray = getResources().getStringArray(R.array.mammals);
-
+*/
         SharedPreferences sharedPref = getSharedPreferences(section, MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPref.edit();
         int size = speciesArray.length;
@@ -68,7 +85,7 @@ public class ScrollingActivity extends AppCompatActivity {
             CheckBox cb = new CheckBox(outerLinear.getContext());
             cb.setText(speciesArray[i]);
             cb.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
-
+            cb.setContentDescription(i + "");
             cb.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -81,7 +98,7 @@ public class ScrollingActivity extends AppCompatActivity {
                 public boolean onLongClick(View view) {
                     //int pos = Integer.parseInt(((TextView) view).getText().toString().replaceAll("[\\D]", ""));
 
-                    Dialog popup = new SpecialDialog(ScrollingActivity.this, ((TextView) view).getText().toString(), "mammals");
+                    Dialog popup = new SpecialDialog(ScrollingActivity.this, ((TextView) view).getContentDescription().toString(), section.toLowerCase());
                     popup.show();
 
                     return false;

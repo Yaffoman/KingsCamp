@@ -143,7 +143,7 @@
         android:layout_height="0dp"
         android:layout_gravity="center"
         android:gravity="center"
-        android:text="@string/textview"
+        android:text=""
         android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@id/nav_view"
         app:layout_constraintStart_toStartOf="@+id/plant_frame"
