@@ -517,11 +517,24 @@
     <string name="reptilesandamphibians">Reptiles\nAnd\nAmphibians</string>
     <string name="close">Close</string>
     <string name="test_description">TEST DESCRIPTION</string>
-    <string name="test_scientific_name">TEST SCIENTIFIC NAME</string>
+    <string name="test_scientific_name" translatable="false">TEST SCIENTIFIC NAME</string>
     <string name="true_mammals" translatable="false">MAMMALS</string>
     <string name="true_reptiles" translatable="false">REPTILES</string>
     <string name="true_birds" translatable="false">BIRDS</string>
     <string name="true_plants" translatable="false">PLANTS</string>
     <string name="true_amphibians" translatable="false">AMPHIBIANS</string>
+    <string name="title_map" translatable="false">Map</string>
+    <string name="title_info" translatable="false">Info</string>
+    <string name="info" translatable="false">
+        Kings Camp is a sophisticated safari camp located in the wildlife-rich Timbavati Private Game Reserve, adjacent to the Kruger National Park.
+        The camp is situated in South Africa’s northernmost province of Limpopo, renowned for its impressive wildlife, including the Big 5.\n\n
+        The lodge is managed by husband and wife team, Warren and Lisha Moore, who have been part of the Kings Camp family since 1995.
+        Since taking over management in 1998, Warren and Lisha have nurtured this Timbavati lodge as if it was their own.
+        They are supported by a dedicated team of staff, who work to ensure your stay at Kings is as relaxing and enjoyable as possible.\n\n
+        At <b>Kings Camp Private Game Reserve</b>, we aim to provide a highly personalised and memorable safari experience.
+        Our team of passionate guides and trackers is one of the most crucial aspects of your safari in the Timbavati.
+        They facilitate the wildlife encounters that you’ll be talking about long after you’ve forgotten the delicious food or your comfy bed.
+        Whether you’re particularly interested in birds or hoping to see the Big 5, our guides will help to tailor your activities around your preferences.
+    </string>
 
 </resources>

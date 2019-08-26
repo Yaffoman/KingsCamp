@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    tools:context=".MainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/mammal_frame"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/plant_frame"
+        app:layout_constraintEnd_toStartOf="@id/reptile_frame"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread">
+
+        <ProgressBar
+            android:id="@+id/mammal_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:indeterminate="false"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:progressDrawable="@drawable/progress_bar_states" />
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/mammal_button"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:onClick="onButtonClick"
+            android:text="@string/mammals"
+            android:contentDescription="@string/true_mammals" />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/reptile_frame"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/mammal_frame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mammal_frame"
+        app:layout_constraintTop_toTopOf="@id/mammal_frame">
+
+        <ProgressBar
+            android:id="@+id/reptile_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:indeterminate="false"
+            android:progressDrawable="@drawable/progress_bar_states"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp" />
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/reptile_button"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:onClick="onButtonClick"
+            android:text="@string/reptiles"
+            android:contentDescription="@string/true_reptiles" />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/bird_frame"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/textView"
+        app:layout_constraintEnd_toStartOf="@id/amphibian_frame"
+        app:layout_constraintStart_toStartOf="@id/mammal_frame"
+        app:layout_constraintTop_toBottomOf="@id/mammal_frame">
+
+        <ProgressBar
+            android:id="@+id/bird_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:indeterminate="false"
+            android:progressDrawable="@drawable/progress_bar_states"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp" />
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/bird_button"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:onClick="onButtonClick"
+            android:text="@string/birds"
+            android:contentDescription="@string/true_birds" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/plant_frame"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/amphibian_frame"
+        app:layout_constraintTop_toBottomOf="@id/mammal_frame">
+
+        <ProgressBar
+            android:id="@+id/plant_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:indeterminate="false"
+            android:progressDrawable="@drawable/progress_bar_states"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp" />
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/plant_button"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:onClick="onButtonClick"
+            android:text="@string/plants"
+            android:contentDescription="@string/true_plants" />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/amphibian_frame"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/plant_frame"
+        app:layout_constraintStart_toEndOf="@+id/bird_frame"
+        app:layout_constraintTop_toBottomOf="@id/mammal_frame">
+
+        <ProgressBar
+            android:id="@+id/amphibian_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:indeterminate="false"
+            android:progressDrawable="@drawable/progress_bar_states"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp" />
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/amphibian_button"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:onClick="onButtonClick"
+            android:text="@string/amphibians"
+            android:maxLines="1"
+            android:paddingHorizontal="0dp"
+            android:contentDescription="@string/true_amphibians" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text=""
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/mammal_frame"
+        app:layout_constraintTop_toBottomOf="@+id/bird_frame"
+        android:maxHeight="100dp"
+        android:elevation="10dp" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="@android:style/Widget.Material.ProgressBar.Horizontal"
+        android:progressDrawable="@drawable/progress_bar_states_bottombar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toBottomOf="@id/textView"
+        app:layout_constraintEnd_toEndOf="@id/textView"
+        app:layout_constraintStart_toStartOf="@id/textView"
+        app:layout_constraintTop_toTopOf="@id/textView" />
+
+</android.support.constraint.ConstraintLayout>
