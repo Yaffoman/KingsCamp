@@ -80,7 +80,7 @@
             android:gravity="center"
             android:onClick="onButtonClick"
             android:text="@string/reptiles"
-            android:contentDescription="REPTILES" />
+            android:contentDescription="@string/true_reptiles" />
     </FrameLayout>
 
 
@@ -111,7 +111,7 @@
             android:gravity="center"
             android:onClick="onButtonClick"
             android:text="@string/birds"
-            android:contentDescription="BIRDS" />
+            android:contentDescription="@string/true_birds" />
     </FrameLayout>
 
     <FrameLayout
@@ -141,7 +141,7 @@
             android:gravity="center"
             android:onClick="onButtonClick"
             android:text="@string/plants"
-            android:contentDescription="PLANTS" />
+            android:contentDescription="@string/true_plants" />
     </FrameLayout>
 
 
@@ -173,7 +173,7 @@
             android:text="@string/amphibians"
             android:maxLines="1"
             android:paddingHorizontal="0dp"
-            android:contentDescription="AMPHIBIANS" />
+            android:contentDescription="@string/true_amphibians" />
     </FrameLayout>
 
     <TextView
