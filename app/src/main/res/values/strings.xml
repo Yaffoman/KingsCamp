@@ -442,21 +442,82 @@
         <item>Cardinal Woodpecker</item>
         <item>Golden-tailed Woodpecker</item>
     </string-array>
+    <string-array name="reptiles">
+        <item>Hingedback Tortoise</item>
+        <item>Leopard / Mountain Tortoise</item>
+        <item>Marsh Terrapin</item>
+        <item>Serrated Hinged Terrapin</item>
+        <item>African Rock Python</item>
+        <item>Black Mamba</item>
+        <item>Cobra, Mozambique Spitting</item>
+        <item>Cobra, Snouted</item>
+        <item>Common Egg-eater</item>
+        <item>Flap-necked Chameleon</item>
+        <item>Gecko, Common Dwarf</item>
+        <item>Gecko, Tropical House</item>
+        <item>Gecko, Whalberg\'s Velvety</item>
+        <item>Giant Plated Lizard</item>
+        <item>Monitor, Nile</item>
+        <item>Monitor, Rock</item>
+        <item>Puffadder</item>
+        <item>Skink, Common Striped</item>
+        <item>Skink, Common Variable Skink</item>
+        <item>Skink, Rainbow Rock</item>
+        <item>Skink, Two-toed Burrowing</item>
+        <item>Snake, Dwarf Sand</item>
+        <item>Snake, Eastern Tiger</item>
+        <item>Snake, Lebombo Shield Nose</item>
+        <item>Snake, Olive Grass</item>
+        <item>Snake, Red-lipped</item>
+        <item>Snake, Southern Vine</item>
+        <item>Snake, Spotted / Variegated Bush</item>
+        <item>Snake, Striped (Yellow) Bellied Sand</item>
+        <item>Snake, Tree (Boomslang)</item>
+        <item>Snouted Night adder</item>
+        <item>Tree Agama</item>
+        <item>Nile Crocodile</item>
+    </string-array>
+
+    <string-array name="amphibians">
+        <item>Bubbling Kassina</item>
+        <item>Common Caco</item>
+        <item>Common Rana</item>
+        <item>Frog, Banded Rubber</item>
+        <item>Frog, Broad Banded Grass</item>
+        <item>Frog, Brown-backed</item>
+        <item>Frog, Bushveld Rain</item>
+        <item>Frog, Dwarf Puddle</item>
+        <item>Frog, Foam Nest (Grey tree Frog)</item>
+        <item>Frog, Mozambique Tree</item>
+        <item>Frog, Ornate</item>
+        <item>Frog, Painted Reed</item>
+        <item>Frog, Plain Grass</item>
+        <item>Frog, Snoring Puddle</item>
+        <item>Lowveld Bullfrog</item>
+        <item>Northern Platanna</item>
+        <item>Toad, Common</item>
+        <item>Toad, Eastern Olive</item>
+        <item>Toad, Red</item>
+    </string-array>
 
     <string-array name="sections">
         <item>@string/plants</item>
         <item>@string/birds</item>
         <item>@string/mammals</item>
-        <item>@string/reptilesandamphibians</item>
+        <item>@string/reptiles</item>
+        <item>@string/amphibians</item>
     </string-array>
 
     <string name="action_settings">Settings</string>
     <string name="plants">Plants</string>
     <string name="birds">Birds</string>
     <string name="mammals">Mammals</string>
+    <string name="amphibians">Amphibians</string>
+    <string name="reptiles">Reptiles</string>
     <string name="reptilesandamphibians">Reptiles\nAnd\nAmphibians</string>
     <string name="close">Close</string>
     <string name="test_description">TEST DESCRIPTION</string>
     <string name="test_scientific_name">TEST SCIENTIFIC NAME</string>
+    <string name="true_mammals" translatable="false">MAMMALS</string>
 
 </resources>

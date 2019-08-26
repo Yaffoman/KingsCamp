@@ -27,15 +27,18 @@ public class ScrollingActivity extends AppCompatActivity {
     int selectedColor;
     int unselectedColor;
     String SECTION_KEY = "SECTION";
+    String STANDARD_SECTION_KEY = "STD_SECTION";
     String ARRAY_NAME = "myArr";
     CheckBox[] checklist;
     String section;
+    String stdSection;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Intent intent = getIntent();
         section = intent.getStringExtra(SECTION_KEY);
+        stdSection = intent.getStringExtra(STANDARD_SECTION_KEY);
         setContentView(R.layout.activity_scrolling);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -59,6 +62,12 @@ public class ScrollingActivity extends AppCompatActivity {
                 break;
             case 2:
                 speciesArray = getResources().getStringArray(R.array.mammals);
+                break;
+            case 3:
+                speciesArray = getResources().getStringArray(R.array.reptiles);
+                break;
+            case 4:
+                speciesArray = getResources().getStringArray(R.array.amphibians);
                 break;
             default:
                 speciesArray = getResources().getStringArray(R.array.mammals);
@@ -98,7 +107,7 @@ public class ScrollingActivity extends AppCompatActivity {
                 public boolean onLongClick(View view) {
                     //int pos = Integer.parseInt(((TextView) view).getText().toString().replaceAll("[\\D]", ""));
 
-                    Dialog popup = new SpecialDialog(ScrollingActivity.this, ((TextView) view).getContentDescription().toString(), section.toLowerCase());
+                    Dialog popup = new SpecialDialog(ScrollingActivity.this, ((TextView) view).getContentDescription().toString(), stdSection.toLowerCase());
                     popup.show();
 
                     return false;

@@ -110,9 +110,11 @@
     <string name="plants">Plante</string>
     <string name="birds">" Voëls"</string>
     <string name="mammals">Soogdiere</string>
-    <string name="reptilesandamphibians">Reptiele\nen\nAmfibieë</string>
+    <string name="reptilesandamphibians">Reptiele en Amfibieë</string>
     <string name="test_scientific_name">TEST SCIENTIFIC NAME</string>
     <string name="test_description">TEST DESCRIPTION</string>
     <string name="close">Naby</string>
+    <string name="reptiles">Reptiele</string>
+    <string name="amphibians">Amfibieë</string>
 
 </resources>

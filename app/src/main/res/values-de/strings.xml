@@ -110,9 +110,11 @@
     <string name="plants">Pflanzen</string>
     <string name="birds">Vögel</string>
     <string name="mammals">Säugetiere</string>
-    <string name="reptilesandamphibians">Reptilien\nund\nAmphibien</string>
+    <string name="reptilesandamphibians">Reptilien und Amphibien</string>
     <string name="test_scientific_name">TEST SCIENTIFIC NAME</string>
     <string name="test_description">TEST DESCRIPTION</string>
     <string name="close">Schließen</string>
+    <string name="reptiles">Reptilien</string>
+    <string name="amphibians">Amphibien</string>
 
 </resources>

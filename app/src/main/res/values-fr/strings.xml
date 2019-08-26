@@ -109,9 +109,11 @@
     <string name="plants">Plantes</string>
     <string name="birds">Oiseaux</string>
     <string name="mammals">Mammifères</string>
-    <string name="reptilesandamphibians">Reptiles\net\nAmphibiens</string>
+    <string name="reptilesandamphibians">Reptiles et Amphibiens</string>
     <string name="close">Fermer</string>
     <string name="test_description">TEST DESCRIPTION</string>
     <string name="test_scientific_name">TEST SCIENTIFIC NAME</string>
+    <string name="reptiles">Reptiles</string>
+    <string name="amphibians">Amphibiens</string>
 
 </resources>

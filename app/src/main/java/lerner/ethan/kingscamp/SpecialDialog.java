@@ -22,6 +22,7 @@ import org.w3c.dom.Text;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
 
 public class SpecialDialog extends Dialog implements
         android.view.View.OnClickListener {
@@ -40,14 +41,14 @@ public class SpecialDialog extends Dialog implements
     SpecialDialog(Activity a, String name, String specie) {
         super(a);
         int index = 0;
-        switch (specie) {
+        /*switch (specie) {
             case "mammals":
                 index = 0;
             case "birds":
                 index = 1;
             case "plants":
                 index = 2;
-        }
+        }*/
         try {
 
             JSONObject obj = new JSONObject(loadJSONFromAsset(a));
@@ -62,6 +63,12 @@ public class SpecialDialog extends Dialog implements
 
         } catch (JSONException e) {
             e.printStackTrace();
+            if (sciname == null || sciname.compareTo("") == 0)
+                sciname = "Scientific Name not available";
+            if (description == null || description.compareTo("") == 0)
+                description = "Description not available";
+            if (imageID == 0)
+                imageID = R.mipmap.default_image;
         }
 
        /* switch (specie) {
@@ -89,6 +96,7 @@ public class SpecialDialog extends Dialog implements
         ImageView imageView = findViewById(R.id.imageView);
         TextView descView = findViewById(R.id.desc_view);
         TextView sciView = findViewById(R.id.sciname_view);
+
         imageView.setImageResource(imageID);
         descView.setText(description);
         sciView.setText(sciname);
@@ -100,29 +108,21 @@ public class SpecialDialog extends Dialog implements
     }
 
 
-    public String loadJSONFromAsset(Context context) {
+    private String loadJSONFromAsset(Context context) {
         String json = null;
         try {
             InputStream is = context.getAssets().open("imageids.json");
-
             int size = is.available();
-
             byte[] buffer = new byte[size];
 
             is.read(buffer);
-
             is.close();
-
-            json = new String(buffer, "UTF-8");
-
+            json = new String(buffer, StandardCharsets.UTF_8);
 
         } catch (IOException ex) {
             ex.printStackTrace();
             return null;
         }
         return json;
-
     }
-
-
 }
