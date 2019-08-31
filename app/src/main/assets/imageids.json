@@ -1,13 +1,401 @@
 {
   "mammals": {
+    "4": [
+      {
+        "sciname": "Scientific Name not available",
+        "imageid": "chacma_baboon"
+      }
+    ],
+    "6": [
+      {
+        "sciname": "Scientific Name not available",
+        "imageid": "bushbuck"
+      }
+    ],
+    "10": [
+      {
+        "sciname": "Scientific Name not available",
+        "imageid": "african_Civet"
+      }
+    ],
+    "14": [
+      {
+        "sciname": "Scientific Name not available",
+        "imageid": "common_genet"
+      }
+    ],
+    "15": [
+      {
+        "sciname": "Scientific Name not available",
+        "imageid": "common_genet"
+      }
+    ],
+    "19": [
+      {
+        "sciname": "Scientific Name not available",
+        "imageid": "honey_badger"
+      }
+    ],
+    "35": [
+      {
+        "sciname": "Scientific Name not available",
+        "imageid": "squirrel_bush"
+      }
+    ],
+    "29": [
+      {
+        "sciname": "Scientific Name not available",
+        "imageid": "mongoose_dwarf"
+      }
+    ],
+    "31": [
+      {
+        "sciname": "Scientific Name not available",
+        "imageid": "monkey_vervet2"
+      }
+    ],
     "42": [
       {
         "sciname": "Lycaon pictus",
         "imageid": "wilddog",
-        "description": ""
+        "description": " "
       }
     ]
   },
+  "plants": {
+    "1": [
+      {
+        "sciname": "Maclura africana"
+      }
+    ],
+    "2": [
+      {
+        "sciname": "Philenoptera violacea"
+      }
+    ],
+    "3": [
+      {
+        "sciname": "Strychnos madagascariensis"
+      }
+    ],
+    "4": [
+      {
+        "sciname": "Scotia capitata"
+      }
+    ],
+    "5": [
+      {
+        "sciname": "Scotia brachypetela"
+      }
+    ],
+    "6": [
+      {
+        "sciname": "Ziziphus mucronata"
+      }
+    ],
+    "7": [
+      {
+        "sciname": "Combretum apiculatum"
+      }
+    ],
+    "8": [
+      {
+        "sciname": "Combretum hereroense"
+      }
+    ],
+    "9": [
+      {
+        "sciname": "Ormocarpum trichocarpum"
+      }
+    ],
+    "10": [
+      {
+        "sciname": "Teminalia prunioides"
+      }
+    ],
+    "11": [
+      {
+        "sciname": "Terminalia sericea"
+      }
+    ],
+    "12": [
+      {
+        "sciname": "Commiphora pyracanthoides"
+      }
+    ],
+    "13": [
+      {
+        "sciname": "Albizia harveyi"
+      }
+    ],
+    "14": [
+      {
+        "sciname": "Dombeya rotundifolia"
+      }
+    ],
+    "15": [
+      {
+        "sciname": "Combretum microphyllum"
+      }
+    ],
+    "16": [
+      {
+        "sciname": "Combretum mossambicense"
+      }
+    ],
+    "17": [
+      {
+        "sciname": "Lannea schweinfurthii"
+      }
+    ],
+    "18": [
+      {
+        "sciname": "Ficus rotundifolia"
+      }
+    ],
+    "19": [
+      {
+        "sciname": "Ficus sycomorus"
+      }
+    ],
+    "20": [
+      {
+        "sciname": "Euclea undulata"
+      }
+    ],
+    "21": [
+      {
+        "sciname": "Euclea divinorum"
+      }
+    ],
+    "22": [
+      {
+        "sciname": "Euclea natalensis"
+      }
+    ],
+    "23": [
+      {
+        "sciname": "Berchemia discolor"
+      }
+    ],
+    "24": [
+      {
+        "sciname": "Berchemia zeyheri"
+      }
+    ],
+    "25": [
+      {
+        "sciname": "Diospyros mespiliformis"
+      }
+    ],
+    "26": [
+      {
+        "sciname": "Pappea capensis"
+      }
+    ],
+    "27": [
+      {
+        "sciname": "Hyphaene coriacea"
+      }
+    ],
+    "28": [
+      {
+        "sciname": "Combretum imberbe"
+      }
+    ],
+    "29": [
+      {
+        "sciname": "Adenium multiflorum"
+      }
+    ],
+    "30": [
+      {
+        "sciname": "Pachypodium saundersii"
+      }
+    ],
+    "31": [
+      {
+        "sciname": "Adenium swazicum"
+      }
+    ],
+    "32": [
+      {
+        "sciname": "Manilkara mochisia"
+      }
+    ],
+    "33": [
+      {
+        "sciname": "Sclerocarya birrea"
+      }
+    ],
+    "34": [
+      {
+        "sciname": "Colophospermum mopane"
+      }
+    ],
+    "35": [
+      {
+        "sciname": "Rhigozum zambesiacum"
+      }
+    ],
+    "36": [
+      {
+        "sciname": "Trichelia emetica"
+      }
+    ],
+    "37": [
+      {
+        "sciname": "Xanthocercis zambesiaca"
+      }
+    ],
+    "38": [
+      {
+        "sciname": "Grevia hexamita"
+      }
+    ],
+    "39": [
+      {
+        "sciname": "Grevia flavescens"
+      }
+    ],
+    "40": [
+      {
+        "sciname": "Grevia monticola"
+      }
+    ],
+    "41": [
+      {
+        "sciname": "Grevia flava"
+      }
+    ],
+    "42": [
+      {
+        "sciname": "Grevia bicolor"
+      }
+    ],
+    "43": [
+      {
+        "sciname": "Ozoroa sphaerocarpa"
+      }
+    ],
+    "44": [
+      {
+        "sciname": "Kigelia pinnate"
+      }
+    ],
+    "45": [
+      {
+        "sciname": "Dichrostachys cinerea"
+      }
+    ],
+    "46": [
+      {
+        "sciname": "Cassia abreviata"
+      }
+    ],
+    "47": [
+      {
+        "sciname": "Zanthoxylum capensis"
+      }
+    ],
+    "48": [
+      {
+        "sciname": "Ximenia americana"
+      }
+    ],
+    "49": [
+      {
+        "sciname": "Ximenia caffra"
+      }
+    ],
+    "50": [
+      {
+        "sciname": "Maytenus heterophylla"
+      }
+    ],
+    "51": [
+      {
+        "sciname": "Maytenus senegalensis"
+      }
+    ],
+    "52": [
+      {
+        "sciname": "Spirostachys africana"
+      }
+    ],
+    "53": [
+      {
+        "sciname": "Acacia burkei"
+      }
+    ],
+    "54": [
+      {
+        "sciname": "Acacia erubescens"
+      }
+    ],
+    "55": [
+      {
+        "sciname": "Acacia robusta"
+      }
+    ],
+    "56": [
+      {
+        "sciname": "Acacia exuvialis "
+      }
+    ],
+    "57": [
+      {
+        "sciname": "Acacia nigrescens",
+        "imageid": "acacia_nigrescens"
+      }
+    ],
+    "58": [
+      {
+        "sciname": "Acacia gerrardii"
+      }
+    ],
+    "59": [
+      {
+        "sciname": "Acacia nilotica"
+      }
+    ],
+    "60": [
+      {
+        "sciname": "Acacia tortilis"
+      }
+    ],
+    "61": [
+      {
+        "sciname": "Gardenia volkensii"
+      }
+    ],
+    "62": [
+      {
+        "sciname": "Cassine transvaalensis "
+      }
+    ],
+    "63": [
+      {
+        "sciname": "Bolusanthus speciosus"
+      }
+    ],
+    "64": [
+      {
+        "sciname": "Peltophorum africanum"
+      }
+    ],
+    "65": [
+      {
+        "sciname": "Securinega virosa"
+      }
+    ],
+    "66": [
+      {
+        "sciname": "Dalbergia melanoxylon"
+      }
+    ]
+  },
+
   "birds": {
     "1": [
       {
@@ -1669,13 +2057,5 @@
         "sciname": "Campethera abingoni"
       }
     ]
-  },
-  "plants": [
-    {
-      "name": "GB",
-      "sciname": "",
-      "image": "@drawable/wilddog.png",
-      "description": 1381149604
-    }
-  ]
+  }
 }

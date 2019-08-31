@@ -1,9 +1,9 @@
-<resources>
-    <string name="app_name">Kings Camp</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
-    <string name="title_activity_scrolling">ScrollingActivity</string>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" translatable="false">Kings Camp</string>
+    <string name="title_home" translatable="false">Home</string>
+    <string name="title_dashboard" translatable="false">Dashboard</string>
+    <string name="title_notifications" translatable="false">Notifications</string>
+    <string name="title_activity_scrolling" translatable="false">ScrollingActivity</string>
 
     <string-array name="mammals">
 
@@ -53,59 +53,73 @@
 
     </string-array>
 
-    <string-array name="plants">
-        <item>MARULA</item>
-        <item>KNOB THORN</item>
-        <item>MOPANI</item>
-        <item>RED BUSHWILLOW</item>
-        <item>RUSSET BUSHWILLOW</item>
-        <item>LEADWOOD</item>
-        <item>LARGE FRUITED BUSHWILLOW</item>
-        <item>LOWVELD CLUSTER LEAF</item>
-        <item>SILVER CLUSTER LEAF</item>
-        <item>JACKALBERRY</item>
-        <item>SAVANNA GARDENIA</item>
-        <item>WILD DATE PALM</item>
-        <item>LALA PALM</item>
-        <item>LARGE LEAF ROCKFIG</item>
-        <item>SYCAMORE FIG</item>
-        <item>SMALL SOURPLUM </item>
-        <item>SOURPLUM</item>
-        <item>ANA TREE</item>
-        <item>UMBRELLA THORN</item>
-        <item>SICKLE BUSH</item>
-        <item>WEEPING BOER BEAN</item>
-        <item>SJAMBOKPOD</item>
-        <item>WEEPING WATTLE</item>
-        <item>WILD MANGO</item>
-        <item>TREE WISTERIA</item>
-        <item>ZEBRAWOOD</item>
-        <item>APPLE LEAF</item>
-        <item>NYALA TREE</item>
-        <item>SMALL KNOBWOOD</item>
-        <item>WHITE SERINGA</item>
-        <item>TALL COMMON CORKWOOD</item>
-        <item>TAMBOTI</item>
-        <item>FALSE MARULA</item>
-        <item>WHITE RESIN TREE</item>
-        <item>COMMON RESIN TREE</item>
-        <item>COMMON SPIKE THORN</item>
-        <item>TRANSVAAL SAFFRON</item>
-        <item>JACKET PLUM</item>
-        <item>BUFFALO THORN</item>
-        <item>GIANT RAISIN</item>
-        <item>SILVER RAISIN</item>
-        <item>COMMON STAR CHESTNUT</item>
-        <item>MAGIC GUARRI</item>
-        <item>KNOBBLY CREEPER</item>
-        <item>POTATO BUSH</item>
-        <item>SANDPAPER RAISIN</item>
-        <item>DWARF BOER BEAN</item>
-        <item>RED SPIKE THORN</item>
-        <item>PORCUPINE BUSH</item>
-        <item>FLAKY THORN</item>
-        <item>MOPANE POMEGRANITE</item>
-        <item>IMPALA LILY</item>
+    <string-array name="plants" tools:ignore="InconsistentArrays">
+        <item>African Osage Orange</item>
+        <item>Apple-leaf</item>
+        <item>Black Monkey Orange</item>
+        <item>Boer Bean, Dwarf</item>
+        <item>Boer Bean, Weeping</item>
+        <item>Buffalo Thorn</item>
+        <item>Bushwillow, Red</item>
+        <item>Bushwillow, Russet</item>
+        <item>Caterpillar Bush</item>
+        <item>Cluster-leaf, Lowveld</item>
+        <item>Cluster-leaf, Silver</item>
+        <item>Common Corkwood</item>
+        <item>Common False Thorn</item>
+        <item>Common Wild Pear</item>
+        <item>Creeper, Flame</item>
+        <item>Creeper, Knobbly</item>
+        <item>False Marula</item>
+        <item>Fig, Large-leaved Rock</item>
+        <item>Fig, Sycamore</item>
+        <item>Guarri, Common</item>
+        <item>Guarri, Magic</item>
+        <item>Guarri, Natal</item>
+        <item>Ivory, Brown</item>
+        <item>Ivory, Red</item>
+        <item>Jackal Berry</item>
+        <item>Jacket Plum</item>
+        <item>Lala Palm</item>
+        <item>Leadwood</item>
+        <item>Lily, Impala</item>
+        <item>Lily, Kudu</item>
+        <item>Lily, Summer Impala</item>
+        <item>Lowveld Milkberry</item>
+        <item>Marula</item>
+        <item>Mopane</item>
+        <item>Mopane Pomegranate</item>
+        <item>Natal Mahogany</item>
+        <item>Nyala Tree</item>
+        <item>Raisen, Giant</item>
+        <item>Raisen, Sandpaper</item>
+        <item>Raisen, Silver</item>
+        <item>Raisen, Velvet</item>
+        <item>Raisen, White</item>
+        <item>Resin Tree, Current</item>
+        <item>Sausage Tree</item>
+        <item>Sickle Bush</item>
+        <item>Sjambok Pod</item>
+        <item>Small Knobwood</item>
+        <item>Sourplum, Blue</item>
+        <item>Sourplum, Large</item>
+        <item>Spike-thorn, Common</item>
+        <item>Spike-thorn, Red</item>
+        <item>Tamboti</item>
+        <item>Thorn, Black Monkey</item>
+        <item>Thorn, Blue</item>
+        <item>Thorn, Brack</item>
+        <item>Thorn, Flaky</item>
+        <item>Thorn, Knob</item>
+        <item>Thorn, Red</item>
+        <item>Thorn, Scented</item>
+        <item>Thorn, Umbrella</item>
+        <item>Transvaal Gardenia</item>
+        <item>Transvaal Saffron</item>
+        <item>Tree Wisteria</item>
+        <item>Weeping Wattle</item>
+        <item>White Berry Bush</item>
+        <item>Zebrawood</item>
     </string-array>
 
     <string-array name="birds">
@@ -442,6 +456,7 @@
         <item>Cardinal Woodpecker</item>
         <item>Golden-tailed Woodpecker</item>
     </string-array>
+
     <string-array name="reptiles">
         <item>Hingedback Tortoise</item>
         <item>Leopard / Mountain Tortoise</item>
@@ -508,7 +523,7 @@
         <item>@string/amphibians</item>
     </string-array>
 
-    <string name="action_settings">Settings</string>
+    <string name="action_settings" translatable="false">Settings</string>
     <string name="plants">Plants</string>
     <string name="birds">Birds</string>
     <string name="mammals">Mammals</string>
@@ -516,7 +531,7 @@
     <string name="reptiles">Reptiles</string>
     <string name="reptilesandamphibians">Reptiles\nAnd\nAmphibians</string>
     <string name="close">Close</string>
-    <string name="test_description">TEST DESCRIPTION</string>
+    <string name="test_description" translatable="false">TEST DESCRIPTION</string>
     <string name="test_scientific_name" translatable="false">TEST SCIENTIFIC NAME</string>
     <string name="true_mammals" translatable="false">MAMMALS</string>
     <string name="true_reptiles" translatable="false">REPTILES</string>

@@ -27,8 +27,8 @@ public class HomeFragment extends Fragment {
 
 
     int TOTAL_MAMMALS = 43;
-    int TOTAL_PLANTS = 50;
-    int TOTAL_BIRDS = 333;
+    int TOTAL_PLANTS = 66;
+    int TOTAL_BIRDS = 332;
     int TOTAL_REPTILES = 33;
     int TOTAL_AMPHIBIANS = 19;
     int TOTAL_SPECIES = TOTAL_BIRDS + TOTAL_PLANTS + TOTAL_MAMMALS + TOTAL_REPTILES + TOTAL_AMPHIBIANS;

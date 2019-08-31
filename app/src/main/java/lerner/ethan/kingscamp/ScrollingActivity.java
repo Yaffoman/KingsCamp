@@ -94,7 +94,7 @@ public class ScrollingActivity extends AppCompatActivity {
             CheckBox cb = new CheckBox(outerLinear.getContext());
             cb.setText(speciesArray[i]);
             cb.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
-            cb.setContentDescription(i + "");
+            cb.setContentDescription(i + 1 + "");
             cb.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {

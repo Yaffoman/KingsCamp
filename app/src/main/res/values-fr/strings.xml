@@ -1,9 +1,4 @@
 <resources>
-    <string name="app_name">Kings Camp</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
-    <string name="title_activity_scrolling">ScrollingActivity</string>
     <string-array name="mammals">
         <item>ORYCTEROPE</item>
         <item>PROTELE</item>
@@ -50,69 +45,11 @@
         <item>LYCAON</item>
     </string-array>
 
-    <string-array name="plants">
-        <item>MARULA</item>
-        <item>KNOB THORN</item>
-        <item>MOPANI</item>
-        <item>RED BUSHWILLOW</item>
-        <item>RUSSET BUSHWILLOW</item>
-        <item>LEADWOOD</item>
-        <item>LARGE FRUITED BUSHWILLOW</item>
-        <item>LOWVELD CLUSTER LEAF</item>
-        <item>SILVER CLUSTER LEAF</item>
-        <item>JACKALBERRY</item>
-        <item>SAVANNA GARDENIA</item>
-        <item>WILD DATE PALM</item>
-        <item>LALA PALM</item>
-        <item>LARGE LEAF ROCKFIG</item>
-        <item>SYCAMORE FIG</item>
-        <item>SMALL SOURPLUM </item>
-        <item>SOURPLUM</item>
-        <item>ANA TREE</item>
-        <item>UMBRELLA THORN</item>
-        <item>SICKLE BUSH</item>
-        <item>WEEPING BOER BEAN</item>
-        <item>SJAMBOKPOD</item>
-        <item>WEEPING WATTLE</item>
-        <item>WILD MANGO</item>
-        <item>TREE WISTERIA</item>
-        <item>ZEBRAWOOD</item>
-        <item>APPLE LEAF</item>
-        <item>NYALA TREE</item>
-        <item>SMALL KNOBWOOD</item>
-        <item>WHITE SERINGA</item>
-        <item>TALL COMMON CORKWOOD</item>
-        <item>TAMBOTI</item>
-        <item>FALSE MARULA</item>
-        <item>WHITE RESIN TREE</item>
-        <item>COMMON RESIN TREE</item>
-        <item>COMMON SPIKE THORN</item>
-        <item>TRANSVAAL SAFFRON</item>
-        <item>JACKET PLUM</item>
-        <item>BUFFALO THORN</item>
-        <item>GIANT RAISIN</item>
-        <item>SILVER RAISIN</item>
-        <item>COMMON STAR CHESTNUT</item>
-        <item>MAGIC GUARRI</item>
-        <item>KNOBBLY CREEPER</item>
-        <item>POTATO BUSH</item>
-        <item>SANDPAPER RAISIN</item>
-        <item>DWARF BOER BEAN</item>
-        <item>RED SPIKE THORN</item>
-        <item>PORCUPINE BUSH</item>
-        <item>FLAKY THORN</item>
-        <item>MOPANE POMEGRANITE</item>
-        <item>IMPALA LILY</item>
-    </string-array>
-
-    <string name="action_settings">Settings</string>
     <string name="plants">Plantes</string>
     <string name="birds">Oiseaux</string>
     <string name="mammals">Mammifères</string>
     <string name="reptilesandamphibians">Reptiles et Amphibiens</string>
     <string name="close">Fermer</string>
-    <string name="test_description">TEST DESCRIPTION</string>
-    <string name="test_scientific_name">TEST SCIENTIFIC NAME</string>
     <string name="reptiles">Reptiles</string>
     <string name="amphibians">Amphibiens</string>
 

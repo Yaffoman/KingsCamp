@@ -57,10 +57,10 @@ public class SpecialDialog extends Dialog implements
             JSONObject myObj = specieArr.getJSONObject(0);
 
             sciname = myObj.getString("sciname");
-            description = obj.getJSONObject(specie).getJSONArray(name.toLowerCase()).getJSONObject(0).getString("description");
+
             String img = obj.getJSONObject(specie).getJSONArray(name.toLowerCase()).getJSONObject(0).getString("imageid");
             imageID = a.getResources().getIdentifier("@drawable/" + img, "drawable", a.getPackageName());
-
+            description = obj.getJSONObject(specie).getJSONArray(name.toLowerCase()).getJSONObject(0).getString("description");
         } catch (JSONException e) {
             e.printStackTrace();
             if (sciname == null || sciname.compareTo("") == 0)
