@@ -7,7 +7,8 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.util.FloatMath;
+import android.util.Log;
+import android.view.GestureDetector;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -15,8 +16,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 public class MapFragment extends Fragment {
-    ImageView imageDetail;
-    Matrix matrix = new Matrix();
+    ImageView imageView;
+    Matrix matrix;
+    Matrix defMatrix = new Matrix();
     Matrix savedMatrix = new Matrix();
     PointF startPoint = new PointF();
     PointF midPoint = new PointF();
@@ -32,14 +34,28 @@ public class MapFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.map_layout, null);
 
+        defMatrix.setTranslate(0f, 600f);
+        defMatrix.setScale(.3f, .3f, 0, 600);
+        matrix = new Matrix(defMatrix);
+        imageView = view.findViewById(R.id.imageView2);
+        imageView.setImageMatrix(defMatrix);
 
-        imageDetail = (ImageView) view.findViewById(R.id.imageView2);
-        imageDetail.setOnTouchListener(new View.OnTouchListener() {
-
+        imageView.setOnTouchListener(new View.OnTouchListener() {
+            private GestureDetector gestureDetector = new GestureDetector(getContext(), new GestureDetector.SimpleOnGestureListener() {
+                @Override
+                public boolean onDoubleTap(MotionEvent e) {
+                    matrix = new Matrix(defMatrix);
+                    Log.d("TEST", "onDoubleTap");
+                    return super.onDoubleTap(e);
+                }
+            });
             @Override
             public boolean onTouch(View v, MotionEvent event) {
 
                 ImageView view = (ImageView) v;
+                float[] values = new float[9];
+                matrix.getValues(values);
+
                 switch (event.getAction() & MotionEvent.ACTION_MASK) {
                     case MotionEvent.ACTION_DOWN:
 
@@ -76,11 +92,28 @@ public class MapFragment extends Fragment {
                             if (newDist > 10f) {
                                 matrix.set(savedMatrix);
                                 float scale = newDist / oldDist;
-                                matrix.postScale(scale, scale, midPoint.x, midPoint.y);
+
+                                if ((values[0] > .3f && scale < 1f) || (scale > 1f && values[0] < 2f))
+                                    matrix.postScale(scale, scale, midPoint.x, midPoint.y);
                             }
                         }
                         break;
                 }
+                Log.d("VALUES", "TRANS X: " + values[2]);
+                Log.d("VALUES", "TRANS Y: " + values[5]);
+                Log.d("VALUES", "SCALE X: " + values[0]);
+                Log.d("VALUES", "SCALE Y: " + values[4]);
+                if (values[0] < .3) {
+                    values[0] = .3f;
+                    values[4] = .3f;
+                    matrix.setValues(values);
+                } else if (values[0] > 2f) {
+                    values[0] = 2f;
+                    values[4] = 2f;
+                    matrix.setValues(values);
+                }
+
+                gestureDetector.onTouchEvent(event);
                 view.setImageMatrix(matrix);
 
                 return true;

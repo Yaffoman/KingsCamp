@@ -107,7 +107,7 @@ public class ScrollingActivity extends AppCompatActivity {
                 public boolean onLongClick(View view) {
                     //int pos = Integer.parseInt(((TextView) view).getText().toString().replaceAll("[\\D]", ""));
 
-                    Dialog popup = new SpecialDialog(ScrollingActivity.this, ((TextView) view).getContentDescription().toString(), stdSection.toLowerCase());
+                    Dialog popup = new SpecialDialog(ScrollingActivity.this, view.getContentDescription().toString(), stdSection.toLowerCase());
                     popup.show();
 
                     return false;
